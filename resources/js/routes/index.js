@@ -3,7 +3,7 @@ import Register from '../components/Register.vue';
 import Login from '../components/Login.vue';
 import Dashboard from '../components/Dashboard.vue';
 import AddPost from '../components/AddPost.vue';
-import EditPosts from '../components/EditPosts.vue';
+import EditPost from '../components/EditPost.vue';
 import Posts from '../components/Posts.vue';
 import {createRouter, createWebHistory} from "vue-router";
 
@@ -47,7 +47,7 @@ export const routes = [
     {
         name: 'editposts',
         path: '/posts/edit',
-        component: EditPosts
+        component: EditPost
     },
 ];
 

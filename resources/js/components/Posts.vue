@@ -17,8 +17,8 @@
                     <th width="50" class="text-center">#</th>
                     <th>Name</th>
                     <th>Description</th>
-                    <th class="text-center" width="120">Image</th>
-                    <th class="text-center, width="200">Actions</th>
+                    <th class="text-center, width: 120px">Image</th>
+                    <th class="text-center, width: 200px">Actions</th>
                 </tr>
                 </thead>
                 <tbody>
