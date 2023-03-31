@@ -2,6 +2,10 @@ import Home from '../components/Home.vue';
 import Register from '../components/Register.vue';
 import Login from '../components/Login.vue';
 import Dashboard from '../components/Dashboard.vue';
+import AddPost from '../components/AddPost.vue';
+import EditPosts from '../components/EditPosts.vue';
+import Posts from '../components/Posts.vue';
+import {createRouter, createWebHistory} from "vue-router";
 
 
 
@@ -27,4 +31,28 @@ export const routes = [
         path: '/dashboard',
         component: Dashboard
     },
+
+    {
+        name: 'posts',
+        path: '/posts',
+        component: Posts
+    },
+
+    {
+        name: 'addposts',
+        path: '/posts/add',
+        component: AddPost
+    },
+
+    {
+        name: 'editposts',
+        path: '/posts/edit',
+        component: EditPosts
+    },
 ];
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes: routes,
+});
+export default router;
