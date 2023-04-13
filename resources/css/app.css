@@ -1,0 +1,236 @@
+body{
+    background-color: #007dbe;
+}
+
+.contenedor {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: white;
+}
+
+.carrusel {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slide {
+    width: calc(25% - 10px);
+    height: auto;
+    background-color: #ddd;
+    margin: 5px;
+    transition: transform 0.5s ease-in-out;
+    transform: scale(0.7);
+}
+
+.slide.active {
+    transform: scale(1);
+}
+
+.cuadros {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cuadro {
+    width: calc(25% - 10px);
+    height: 100px;
+    background-color: #ddd;
+    margin: 5px;
+}
+
+.cuadro a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.cuadro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagenes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.imagen {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.imagen img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 0;
+}
+
+.slider-frame {
+    width: 1280px;
+    height: auto;
+    margin:50px auto 0;
+    overflow: hidden;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider-frame img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+.tabla {
+    width: 100%;
+    padding: 20px;
+}
+
+.tabla h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.tabla-responsive {
+    overflow-x: auto;
+}
+
+.tabla-responsive table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-responsive th,
+.tabla-responsive td {
+    padding: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .tabla-responsive {
+        overflow-x: scroll;
+    }
+}
+
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.proximos-eventos-baloncesto {
+    display: flex;
+    flex-direction: column;
+}
+
+.evento {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cuadrado-rojo, .cuadrado-negro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 1%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.cuadrado-rojo {
+    background-color: #f44336;
+}
+
+.cuadrado-negro {
+    background-color: #212121;
+}
+
+.info-evento {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.hora {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.lugar {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.tipo {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.jornada {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.equipos {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
