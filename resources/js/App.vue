@@ -1,7 +1,7 @@
 <template>
     <div class="container">
-        <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light mb-4">
-            <a class="navbar-brand" href="#">Laravel Vue 3</a>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light mb-4">
+            <a class="navbar-brand" href="#"><img src="" alt=""></a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                     aria-expanded="false" aria-label="Toggle navigation"></button>
             <div class="navbar-nav" v-if="isLoggedin">
@@ -15,6 +15,10 @@
                 <router-link to="/register" class="nav-item nav-link">Register</router-link>
             </div>
         </nav>
+
+
+
+
         <router-view></router-view>
     </div>
 </template>
