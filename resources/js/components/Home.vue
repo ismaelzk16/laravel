@@ -1,44 +1,102 @@
 <template>
     <div class="contenedor">
-        <section class="carrusel">
-            <div class="slider-frame">
-                <ul>
-                    <li><img src="slider1.jpg" alt=""></li>
-                    <li><img src="slider2.jpg" alt=""></li>
-                    <li><img src="slider3.jpg" alt=""></li>
-                    <li><img src="slider4.jpg" alt=""></li>
-                </ul>
+        <div class="carrusel-resultados" style="justify-content: space-between">
+            <div class="carousel-container">
+                <div class="carousel-arrow left-arrow">&#8249;</div>
+                <div class="carousel-content">
+                    <div class="slide">
+                        <div class="left-panel">
+                            <h2>Resultado partido 1</h2>
+                            <p>Equipo local: 80</p>
+                            <p>Equipo visitante: 75</p>
+                        </div>
+                        <div class="resultado-vs-carrusel">
+                            VS
+                        </div>
+                        <div class="right-panel">
+                            <h2>Resultado partido 2</h2>
+                            <p>Equipo local: 90</p>
+                            <p>Equipo visitante: 85</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="left-panel">
+                            <h2>Resultado partido 3</h2>
+                            <p>Equipo local: 70</p>
+                            <p>Equipo visitante: 65</p>
+                        </div>
+                        <div class="resultado-vs-carrusel">
+                            VS
+                        </div>
+                        <div class="right-panel">
+                            <h2>Resultado partido 4</h2>
+                            <p>Equipo local: 85</p>
+                            <p>Equipo visitante: 80</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="left-panel">
+                            <h2>Resultado partido 3</h2>
+                            <p>Equipo local: 70</p>
+                            <p>Equipo visitante: 65</p>
+                        </div>
+                        <div class="resultado-vs-carrusel">
+                            VS
+                        </div>
+                        <div class="right-panel">
+                            <h2>Resultado partido 4</h2>
+                            <p>Equipo local: 85</p>
+                            <p>Equipo visitante: 80</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="left-panel">
+                            <h2>Resultado partido 3</h2>
+                            <p>Equipo local: 70</p>
+                            <p>Equipo visitante: 65</p>
+                        </div>
+                        <div class="resultado-vs-carrusel">
+                            VS
+                        </div>
+                        <div class="right-panel">
+                            <h2>Resultado partido 4</h2>
+                            <p>Equipo local: 85</p>
+                            <p>Equipo visitante: 80</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-arrow right-arrow">&#8250;</div>
             </div>
-        </section>
+        </div>
         <section class="cuadros">
             <div class="cuadro">
-                <a href="#"><img src="foto1.jpg"></a>
+                <a href="#"><img src=""></a>
             </div>
             <div class="cuadro">
-                <a href="#"><img src="foto2.jpg"></a>
+                <a href="#"><img src=""></a>
             </div>
             <div class="cuadro">
-                <a href="#"><img src="foto3.jpg"></a>
+                <a href="#"><img src=""></a>
             </div>
             <div class="cuadro">
-                <a href="#"><img src="foto4.jpg"></a>
+                <a href="#"><img src=""></a>
             </div>
         </section>
         <section class="imagenes">
             <div class="imagen">
-                <img src="imagen1.jpg">
+                <img src="">
                 <p>Texto de la imagen 1</p>
             </div>
             <div class="imagen">
-                <img src="imagen2.jpg">
+                <img src="">
                 <p>Texto de la imagen 2</p>
             </div>
             <div class="imagen">
-                <img src="imagen3.jpg">
+                <img src="">
                 <p>Texto de la imagen 3</p>
             </div>
             <div class="imagen">
-                <img src="imagen4.jpg">
+                <img src="">
                 <p>Texto de la imagen 4</p>
             </div>
         </section>

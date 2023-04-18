@@ -14,28 +14,75 @@ body{
     box-shadow: 0 0 10px rgba(0.5, 0.5, 0.5, 0.7);
 }
 
-.carrusel {
+.carrusel-resultados {
     width: 100%;
-    height: auto;
+    height: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    background-color: red;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-content {
+    display: flex;
+    width: 400%;
+    transition: transform 0.4s ease-in-out;
 }
 
 .slide {
-    width: calc(25% - 10px);
-    height: auto;
-    background-color: red;
-    margin: 5px;
-    transition: transform 0.5s ease-in-out;
-    transform: scale(0.7);
+    display: flex;
+    width: 25%;
+    padding: 0 20px;
 }
 
-.slide.active {
-    transform: scale(1);
+.left-panel {
+    flex-basis: 100%;
+    margin-right: 10px;
 }
+
+.right-panel {
+    flex-basis: 100%;
+    margin-left: 10px;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+.carousel-arrow:hover {
+    background-color: #333;
+    color: #fff;
+}
+
 
 .cuadros {
     width: 100%;
@@ -92,43 +139,6 @@ body{
     margin-right: 0;
 }
 
-.slider-frame {
-    width: 1280px;
-    height: auto;
-    margin:50px auto 0;
-    overflow: hidden;
-}
-
-.slider-frame ul {
-    display: flex;
-    padding: 0;
-    width: 400%;
-
-    animation: slide 20s infinite alternate ease-in-out;
-}
-
-.slider-frame li {
-    width: 100%;
-    list-style: none;
-}
-
-.slider-frame img {
-    width: 100%;
-}
-
-@keyframes slide {
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
-}
 .tabla {
     width: 100%;
     padding: 20px;
