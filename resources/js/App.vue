@@ -12,6 +12,7 @@
             <div class="container">
                 <router-view></router-view>
             </div>
+            </nav>
         </div>
         </template>
         <script>
