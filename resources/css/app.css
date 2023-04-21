@@ -1,0 +1,311 @@
+body{
+    background-color: #007dbe;
+}
+/*NAVBAR*/
+
+.navbar {
+    padding: 0 0 50px 0;
+    overflow: hidden;
+    background-color: #191919;
+    justify-content: left;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: #e21921;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #e21921;
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+/*NAVBAR*/
+
+/*CONTENEDOR*/
+.contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0.5, 0.5, 0.5, 0.7);
+}
+/*CONTENEDOR*/
+
+/*SECCION PRINCIPAL*/
+.carrusel-resultados {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: red;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-content {
+    display: flex;
+    width: 400%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.slide {
+    display: flex;
+    width: 25%;
+    padding: 0 20px;
+}
+
+.left-panel {
+    flex-basis: 100%;
+    margin-right: 10px;
+}
+
+.right-panel {
+    flex-basis: 100%;
+    margin-left: 10px;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+.carousel-arrow:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+.cuadros {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cuadro {
+    width: calc(25% - 10px);
+    height: 100px;
+    background-color: #ddd;
+    margin: 5px;
+}
+
+.cuadro a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.cuadro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagenes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.imagen {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.imagen img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 0;
+}
+
+.tabla {
+    width: 100%;
+    padding: 20px;
+}
+
+.tabla h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.tabla-responsive {
+    overflow-x: auto;
+}
+
+.tabla-responsive table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-responsive th,
+.tabla-responsive td {
+    padding: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .tabla-responsive {
+        overflow-x: scroll;
+    }
+}
+
+.menu-lateral {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.proximos-eventos-baloncesto {
+    display: flex;
+    flex-direction: column;
+}
+
+.evento {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cuadrado-rojo, .cuadrado-negro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 1%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.cuadrado-rojo {
+    background-color: #f44336;
+}
+
+.cuadrado-negro {
+    background-color: #212121;
+}
+
+.info-evento {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.hora {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.lugar {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.tipo {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.jornada {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.equipos {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
