@@ -87,7 +87,7 @@ export default {
                         .then(response => {
                             if (response.data.success) {
                                 console.error('OK');
-                                //this.$router.go('/login')
+                                //this.$routes.go('/login')
                             } else {
                                 console.error('No loggin');
                                 this.error = response.data.message
