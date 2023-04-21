@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\API\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API\UserController;
+use App\Http\Controllers\API\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,9 +21,14 @@ Route::post('login', [UserController::class, 'login']);
 Route::post('register', [UserController::class, 'register']);
 Route::post('logout', [UserController::class, 'logout'])->middleware(middleware:'auth:sanctum');
 
-Route::group(['prefix' => 'posts', 'middleware' => 'auth:sanctum'], function (){
+Route::post('crear', [EntradasController::class, 'crear']);
+
+Route::post('crear', [PartidosController::class, 'crear']);
+
+
+Route::group(['prefix' => 'post', 'middleware' => 'auth:sanctum'], function(){
     Route::get('/', [PostController::class, 'index']);
-    Route::post('add', [PostController::class, 'add']);
+    Route::get('add', [PostController::class, 'add']);
 });
 
 /*

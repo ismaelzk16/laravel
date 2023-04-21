@@ -5,10 +5,8 @@
                 <div v-if="error !== null" class="alert alert-danger alert-dismissible fade show" role="alert">
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 
-
                     <strong>{{error}}</strong>
                 </div>
-
 
                 <div class="card card-default">
                     <div class="card-header"><h5>Login</h5></div>
@@ -23,8 +21,6 @@
                             </div>
 
 
-
-
                             <div class="form-group row mt-1">
                                 <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
                                 <div class="col-md-8">
@@ -33,7 +29,6 @@
                                 </div>
                             </div>
 
-
                             <div class="form-group row mt-1 mb-0">
                                 <div class="col-md-8 offset-md-4">
                                     <button type="submit" class="btn btn-success" @click="doLogin">
@@ -41,7 +36,6 @@
                                     </button>
                                 </div>
                             </div>
-
 
                             <div class="row mt-1">
                                 <div class="col-md-8 offset-md-4">
@@ -53,18 +47,14 @@
                             </div>
 
 
-
-
                         </form>
                     </div>
                 </div>
-
 
             </div>
         </div>
     </div>
 </template>
-
 
 <script>
 export default {
@@ -87,7 +77,7 @@ export default {
                         .then(response => {
                             if (response.data.success) {
                                 console.error('OK');
-                                //this.$router.go('/login')
+                                // window.location.href = "/login"
                             } else {
                                 console.error('No loggin');
                                 this.error = response.data.message
