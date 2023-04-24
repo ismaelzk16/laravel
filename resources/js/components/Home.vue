@@ -1,71 +1,35 @@
 <template>
     <div class="contenedor">
         <div class="carrusel-resultados" style="justify-content: space-between">
-            <div class="carousel-container">
-                <div class="carousel-arrow left-arrow">&#8249;</div>
-                <div class="carousel-content">
-                    <div class="slide">
-                        <div class="left-panel">
-                            <h2>Resultado partido 1</h2>
-                            <p>Equipo local: 80</p>
-                            <p>Equipo visitante: 75</p>
-                        </div>
-                        <div class="resultado-vs-carrusel">
-                            VS
-                        </div>
-                        <div class="right-panel">
-                            <h2>Resultado partido 2</h2>
-                            <p>Equipo local: 90</p>
-                            <p>Equipo visitante: 85</p>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-6 box">
+                                <p>izquierda</p>
+                            </div>
+                            <div class="col-6 box">
+                                <p>derecha</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="slide">
-                        <div class="left-panel">
-                            <h2>Resultado partido 3</h2>
-                            <p>Equipo local: 70</p>
-                            <p>Equipo visitante: 65</p>
-                        </div>
-                        <div class="resultado-vs-carrusel">
-                            VS
-                        </div>
-                        <div class="right-panel">
-                            <h2>Resultado partido 4</h2>
-                            <p>Equipo local: 85</p>
-                            <p>Equipo visitante: 80</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="left-panel">
-                            <h2>Resultado partido 3</h2>
-                            <p>Equipo local: 70</p>
-                            <p>Equipo visitante: 65</p>
-                        </div>
-                        <div class="resultado-vs-carrusel">
-                            VS
-                        </div>
-                        <div class="right-panel">
-                            <h2>Resultado partido 4</h2>
-                            <p>Equipo local: 85</p>
-                            <p>Equipo visitante: 80</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="left-panel">
-                            <h2>Resultado partido 3</h2>
-                            <p>Equipo local: 70</p>
-                            <p>Equipo visitante: 65</p>
-                        </div>
-                        <div class="resultado-vs-carrusel">
-                            VS
-                        </div>
-                        <div class="right-panel">
-                            <h2>Resultado partido 4</h2>
-                            <p>Equipo local: 85</p>
-                            <p>Equipo visitante: 80</p>
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-6 box"></div>
+                            <div class="col-6 box"></div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-arrow right-arrow">&#8250;</div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
         <section class="cuadros">
