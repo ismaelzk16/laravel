@@ -12,9 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('partidos', function (Blueprint $table) {
-            $table->id('id_partidos');
-            $table->int('golesLocales')->nullable();
-            $table->int('golesVisitantes')->nullable();
+            $table->id('id');
+            $table->integer('golesLocales')->nullable();
+            $table->integer('golesVisitantes')->nullable();
             $table->string('resultado')->nullable();
             $table->string('situacion');
             $table->date('fecha');
