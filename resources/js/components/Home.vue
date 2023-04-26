@@ -1,49 +1,54 @@
 <template>
     <div class="contenedor">
+        <div class="seccion-principal">
         <div class="carrusel-resultados" style="justify-content: space-between">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-6 box">
-                                <p>izquierda</p>
+                        <div class="row" style="width: 100%; margin: 0px">
+                            <div class="col-6 boxl">
+                                Partido 1
                             </div>
-                            <div class="col-6 box">
-                                <p>derecha</p>
+                            <div class="col-6 boxr">
+                                Partido 2
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col-6 box"></div>
-                            <div class="col-6 box"></div>
+                            <div class="col-6 boxl">
+                                Partido 3
+                            </div>
+                            <div class="col-6 boxr">
+                                Partido 4
+                            </div>
                         </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon" style="width: 20px;" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                    </svg>
+                    <span class="carousel-control-next-icon" style="width: 20px;" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
         <section class="cuadros">
-            <div class="cuadro">
-                <a href="#"><img src=""></a>
-            </div>
-            <div class="cuadro">
-                <a href="#"><img src=""></a>
-            </div>
-            <div class="cuadro">
-                <a href="#"><img src=""></a>
-            </div>
-            <div class="cuadro">
-                <a href="#"><img src=""></a>
+            <div class="row w-100 m-0">
+                <div class="cuadro col-md-3">
+                    <a href="" class="entrada-banner"></a>
+                </div>
+                <div class="cuadro col-md-3" >
+                    <a href="" class="twitter-banner"></a>
+                </div>
+                <div class="cuadro col-md-3">
+                    <a href="" class="instagram-banner"></a>
+                </div>
+                <div class="cuadro-derecha col-md-3">
+                    <a href="" class="youtube-banner"></a>
+                </div>
             </div>
         </section>
         <section class="imagenes">
@@ -64,6 +69,8 @@
                 <p>Texto de la imagen 4</p>
             </div>
         </section>
+        </div>
+
         <section class="tabla">
             <h2>Tabla de resultados</h2>
             <div class="tabla-responsive">

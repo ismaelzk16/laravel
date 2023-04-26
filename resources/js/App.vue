@@ -1,6 +1,8 @@
 <template>
-    <div style="background-size: 90%; background-color: white; max-width: 100%;">
+    <div style="background-size: 90%; background-color: #007dbe; max-width: 100%;">
+        <div style="width: 100%; background-color: #fff;">
               <img style="background-color: #fff" src="http://statics.proyectoclubes.com/images/header/logo-rayo.png?20230103174823" alt="Logo Rayo" class="loading" data-was-processed="true">
+        </div>
                 <div class="navbar"> <!--v-if=" isLoggedin "-->
                     <router-link to="/" class="nav-item nav-link">Home</router-link>
                     <router-link to="/dashboard" class="nav-item nav-link">Dashboard</router-link>
