@@ -3,9 +3,10 @@
               <img style="background-color: #fff" src="http://statics.proyectoclubes.com/images/header/logo-rayo.png?20230103174823" alt="Logo Rayo" class="loading" data-was-processed="true">
                 <div class="navbar"> <!--v-if=" isLoggedin "-->
                     <router-link to="/" class="nav-item nav-link">Home</router-link>
-                    <router-link to="/dashboard" class="nav-item nav-link">Dashboard</router-link>
+                    <router-link to="/posts" class="nav-item nav-link">Dashboard</router-link>
                     <router-link to="/users" class="nav-item nav-link">Users</router-link>
                     <router-link v-if="isLoggedin" to="/addPartidos" class="nav-item nav-link">Add Partidos</router-link>
+                    <router-link to="/partidos" class="nav-item nav-link">Partidos</router-link>
                     <router-link to="/login" class="nav-item nav-link">Login</router-link>
                     <router-link to="/register" class="nav-item nav-link">Register</router-link>
                     <a class="nav-item nav-link" style="cursor: pointer;" @click="logout">Logout</a>

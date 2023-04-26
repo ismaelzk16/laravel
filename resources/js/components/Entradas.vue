@@ -35,8 +35,8 @@
                     <td>{{partido.equipoVisitante}}</td>
                     <td>{{partido.ubicacion}}</td>
                     <td class="text-center">
-<!--                        <router-link :to="{name:'editpost'}" class="btn btn-warning">Edit</router-link>-->
-<!--                        <button class="btn btn-danger">Delete</button>-->
+                        <!--                        <router-link :to="{name:'editpost'}" class="btn btn-warning">Edit</router-link>-->
+                        <!--                        <button class="btn btn-danger">Delete</button>-->
                     </td>
                 </tr>
                 </tbody>
@@ -60,15 +60,15 @@ export default {
     },
     created() {
         this.$axios.get('/sanctum/csrf-cookie').then(response => {
-            this.$axios.get('api/partidos')
-                .then(response => {
-                    this.partidos = response.data;
-                    console.log('response.data');
-                    console.log(response.data);
-                })
-                .catch(function (error) {
-                    console.log(error);
-                });
+                this.$axios.get('api/partidos')
+                    .then(response => {
+                        this.partidos = response.data;
+                        console.log('response.data');
+                        console.log(response.data);
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
             }
         );
     },

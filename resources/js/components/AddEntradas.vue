@@ -94,52 +94,52 @@
 
 
 <script>
-    export default {
-       name: "Añadir"
-       ,data() {
-           return {
-               golesLocales:"",
-               golesVisitantes:"",
-               jornada:"",
-               situacion:"",
-               fecha:"",
-               equipoLocal:"",
-               equipoVisitante:"",
-               ubicacion:"",
-               error: null
-           }
-       },
-       methods: {
-            anadir(e){
-               e.preventDefault()
-                   this.$axios.get('/sanctum/csrf-cookie').then(response => {
-                       this.$axios.post('api/anadir', {
-                           golesLocales: this.golesLocales,
-                           golesVisitantes: this.golesVisitantes,
-                           jornada: this.jornada,
-                           situacion: this.situacion,
-                           fecha: this.fecha,
-                           equipoLocal: this.equipoLocal,
-                           equipoVisitante: this.equipoVisitante,
-                           ubicacion: this.ubicacion,
-                       })
-                           .then(response => {
-                               if (response.data.success) {
-                                   console.log(response.data);
+export default {
+    name: "Añadir"
+    ,data() {
+        return {
+            golesLocales:"",
+            golesVisitantes:"",
+            jornada:"",
+            situacion:"",
+            fecha:"",
+            equipoLocal:"",
+            equipoVisitante:"",
+            ubicacion:"",
+            error: null
+        }
+    },
+    methods: {
+        anadir(e){
+            e.preventDefault()
+            this.$axios.get('/sanctum/csrf-cookie').then(response => {
+                this.$axios.post('api/anadir', {
+                    golesLocales: this.golesLocales,
+                    golesVisitantes: this.golesVisitantes,
+                    jornada: this.jornada,
+                    situacion: this.situacion,
+                    fecha: this.fecha,
+                    equipoLocal: this.equipoLocal,
+                    equipoVisitante: this.equipoVisitante,
+                    ubicacion: this.ubicacion,
+                })
+                    .then(response => {
+                        if (response.data.success) {
+                            console.log(response.data);
 
-                                   //window.location.href = "/login"
-                               } else {
-                                   this.error = response.data.message
-                               }
-                           })
-                           .catch(function (error) {
-                               console.error(error);
-                           });
-                   })
-           }
-       }
-
-
+                            //window.location.href = "/login"
+                        } else {
+                            this.error = response.data.message
+                        }
+                    })
+                    .catch(function (error) {
+                        console.error(error);
+                    });
+            })
+        }
     }
-    </script>
+
+
+}
+</script>
 
