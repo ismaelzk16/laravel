@@ -16,7 +16,7 @@ class UserController extends Controller
             'email' => $request->email,
             'password' => $request->password
         ];
-        
+
         if(Auth::attempt($credentials)){
             $success = true;
             $message = "Usuario logueado correctamente";
@@ -27,7 +27,7 @@ class UserController extends Controller
 
         $response = [
             'success' => $success,
-            'message' => $message 
+            'message' => $message
         ];
 
         return response()->json($response);
@@ -35,7 +35,7 @@ class UserController extends Controller
 
     }
 
-    
+
 
     public function register(Request $request){
         try{
@@ -49,7 +49,7 @@ class UserController extends Controller
         $success = false;
         $message = $ex->getMessage();
     }
-
+        $roles->roles()->attach($roleId, ['expires' => $expires]);
     $response=[
         'success' => $success,
         'message' => $message,
@@ -64,7 +64,7 @@ class UserController extends Controller
             $success = false;
             $message = $ex->getMessage();
         }
-    
+
         $response=[
             'success' => $success,
             'message' => $message,
