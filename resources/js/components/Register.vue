@@ -2,7 +2,6 @@
     <div class="container">
         <div class="row jutify-content-center">
             <div class="col-md-8">
-                {{name}}
                 <div v-if="error !== null" class="alert alert-danger alert-dismissible fade show" role="alert">
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     <strong>{{error}}</strong>
@@ -119,8 +118,8 @@
                }
            }
        }
-    
-    
+
+
     }
     </script>
-    
+

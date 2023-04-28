@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\API\PartidoController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\UserController;
@@ -23,7 +24,8 @@ Route::post('logout', [UserController::class, 'logout'])->middleware(middleware:
 
 Route::post('crear', [EntradasController::class, 'crear']);
 
-Route::post('crear', [PartidosController::class, 'crear']);
+Route::post('anadir', [PartidoController::class, 'add']);
+Route::get('partidos', [PartidoController::class, 'show']);
 
 
 Route::group(['prefix' => 'post', 'middleware' => 'auth:sanctum'], function(){

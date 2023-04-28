@@ -11,7 +11,7 @@ class Partidos extends Model
     protected $fillable = [
         'golesLocales',
         'golesVisitantes',
-        'resultado',
+        'jornada',
         'situacion',
         'fecha',
         'equipoLocal',
