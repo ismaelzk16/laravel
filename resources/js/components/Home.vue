@@ -26,11 +26,11 @@
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" style="width: 20px;" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon" style="width: 24px; height: 40px;" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" style="width: 20px;" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon" style="width: 24px; height: 40px" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
@@ -41,13 +41,13 @@
                     <a href="" class="entrada-banner"></a>
                 </div>
                 <div class="cuadro col-md-3" >
-                    <a href="" class="twitter-banner"></a>
+                    <a href="https://twitter.com/RayoVallecano" class="twitter-banner"></a>
                 </div>
                 <div class="cuadro col-md-3">
-                    <a href="" class="instagram-banner"></a>
+                    <a href="https://www.instagram.com/rayovallecano/" class="instagram-banner"></a>
                 </div>
                 <div class="cuadro-derecha col-md-3">
-                    <a href="" class="youtube-banner"></a>
+                    <a href="https://www.youtube.com/user/rayovallecanotv" class="youtube-banner"></a>
                 </div>
             </div>
         </section>
