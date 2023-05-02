@@ -4,7 +4,7 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\User;
+use App\Models\Users;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
@@ -39,17 +39,17 @@ class UserController extends Controller
 
     public function register(Request $request){
         try{
-        $user = new User();
+        $user = new Users();
         $user->name = $request->name;
         $user->email = $request->email;
         $user->password = Hash::make($request->password);
         $user->phone = $request->phone;
         $user->save();
+        $user->roles()->sync(2);
     }catch(\Illuminate\Database\QueryException $ex){
         $success = false;
         $message = $ex->getMessage();
     }
-        $roles->roles()->attach($roleId, ['expires' => $expires]);
     $response=[
         'success' => $success,
         'message' => $message,
