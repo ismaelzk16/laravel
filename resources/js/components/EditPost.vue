@@ -1,4 +1,4 @@
-<template>
+EditPost.vue<template>
 
 </template>
 

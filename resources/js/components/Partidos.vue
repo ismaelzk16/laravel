@@ -21,6 +21,7 @@
                     <th>Equipo Local</th>
                     <th>Equipo Visitante</th>
                     <th>Ubicacion</th>
+                    <th>Opciones</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -38,6 +39,11 @@
 <!--                        <router-link :to="{name:'editpost'}" class="btn btn-warning">Edit</router-link>-->
 <!--                        <button class="btn btn-danger">Delete</button>-->
                     </td>
+                    <td class="text-center">
+                        <router-link :to="'/partidos/' + partido.id_partidos + '/editar'" class="btn btn-warning">Edit</router-link>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+
                 </tr>
                 </tbody>
             </table>
