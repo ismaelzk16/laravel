@@ -26,6 +26,7 @@ Route::post('crear', [EntradasController::class, 'crear']);
 
 Route::post('anadir', [PartidoController::class, 'add']);
 Route::get('partidos', [PartidoController::class, 'show']);
+Route::get('/partidos/{id}/editar', [PartidoController::class, 'editar']);
 
 
 Route::group(['prefix' => 'post', 'middleware' => 'auth:sanctum'], function(){

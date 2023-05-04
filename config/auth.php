@@ -18,6 +18,15 @@ return [
         'passwords' => 'users',
     ],
 
+    'roles' => [
+        'admin' => [
+            'permissions' => ['create', 'edit', 'delete', 'buy'],
+        ],
+        'user' => [
+            'permissions' => ['buy'],
+        ]
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Authentication Guards
@@ -44,7 +53,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | User Providers
+    | Users Providers
     |--------------------------------------------------------------------------
     |
     | All authentication drivers have a user provider. This defines how the
@@ -62,7 +71,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' => App\Models\Users::class,
         ],
 
         // 'users' => [

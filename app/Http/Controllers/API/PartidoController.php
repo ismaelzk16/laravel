@@ -43,4 +43,10 @@ class PartidoController extends Controller
 
         return response()->json($response);
     }
+
+    public function editar($id)
+    {
+        $partido = Partidos::find($id);
+        return view('partidos.editar', compact('partido'));
+    }
 }

@@ -40,8 +40,10 @@
                             <div class="form-group row mt-1">
                                 <label for="situacion" class="col-md-4 col-form-label text-md-right">Situacion</label>
                                 <div class="col-md-8">
-                                    <input id="situacion" type="text" class="form-control" v-model="situacion"
-                                           required autocomplete="off" placeholder="Pon el precio">
+                                    <input type="radio" id="situacion" name="situacion" value="done" v-model="situacion">
+                                    <label for="html">Hecho</label>
+                                    <input type="radio" id="situacion" name="situacion" value="undone" v-model="situacion">
+                                    <label for="css">Por hacerse</label><br>
                                 </div>
                             </div>
 
