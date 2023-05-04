@@ -8,7 +8,7 @@
                     <router-link to="/posts" class="nav-item nav-link">Dashboard</router-link>
                     <router-link to="/users" class="nav-item nav-link">Users</router-link>
                     <router-link v-if="isLoggedin" to="/addPartidos" class="nav-item nav-link">Add Partidos</router-link>
-                    <router-link to="/partidos" class="nav-item nav-link">Partidos</router-link>
+                    <router-link v-if="isLoggedin" to="/partidos" class="nav-item nav-link">Partidos</router-link>
                     <router-link to="/login" class="nav-item nav-link">Login</router-link>
                     <router-link to="/register" class="nav-item nav-link">Register</router-link>
                     <a class="nav-item nav-link" style="cursor: pointer;" @click="logout">Logout</a>
