@@ -9,6 +9,7 @@ import EditPosts from '../components/EditPost.vue';
 import Users from '../components/Users.vue';
 import Partidos from '../components/Partidos.vue';
 import AddPartidos from '../components/AddPartidos.vue';
+import EditPartidos from '../components/EditPartidos.vue';
 
 export const routes = [
 
@@ -58,6 +59,11 @@ export const routes = [
       path: '/addPartidos',
       component: AddPartidos
     },
+    {
+    name: 'editPartidos',
+    path: '/editPartidos',
+    component: EditPartidos
+    }
 ];
 
 const router = createRouter({

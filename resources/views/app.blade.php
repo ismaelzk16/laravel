@@ -15,11 +15,15 @@
 
 
 @if (Auth::check())
+    {{Auth::user()->roles }}
     <script>
+
         window.Laravel = {!!json_encode([
            'isLoggedin' => true,
            'user' => Auth::user()
        ])!!}
+
+        {{}}
     </script>
 @else
     <script>
@@ -28,6 +32,7 @@
            ])!!}
     </script>
 @endif
+
 
 <script>
     console.log( window.Laravel.user);

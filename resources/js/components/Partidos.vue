@@ -1,5 +1,4 @@
 <template>
-
     <div class="card">
         <div class="card-body">
             <div class="d-flex justify-content-between pb-2 mb-2">
@@ -36,23 +35,14 @@
                     <td>{{partido.equipoVisitante}}</td>
                     <td>{{partido.ubicacion}}</td>
                     <td class="text-center">
-<!--                        <router-link :to="{name:'editpost'}" class="btn btn-warning">Edit</router-link>-->
-<!--                        <button class="btn btn-danger">Delete</button>-->
-                    </td>
-                    <td class="text-center">
-                        <router-link :to="'/partidos/' + partido.id_partidos + '/editar'" class="btn btn-warning">Edit</router-link>
+                        <router-link :to="{ name: 'editPartidos', params: { id: partido.id_partidos } }" class="btn btn-warning">Edit</router-link>
                         <button class="btn btn-danger">Delete</button>
                     </td>
-
                 </tr>
                 </tbody>
             </table>
-
-
         </div>
     </div>
-
-
 </template>
 
 <script>
@@ -62,25 +52,30 @@ export default {
             partidos: [],
             strSuccess: '',
             strError: ''
-        }
+        };
     },
     created() {
-        this.$axios.get('/sanctum/csrf-cookie').then(response => {
-            this.$axios.get('api/partidos')
-                .then(response => {
-                    this.partidos = response.data;
-                    console.log('response.data');
-                    console.log(response.data);
-                })
-                .catch(function (error) {
-                    console.log(error);
-                });
-            }
-        );
+        this.$axios
+            .get('/sanctum/csrf-cookie')
+            .then((response) => {
+                this.$axios
+                    .get('api/partidos')
+                    .then((response) => {
+                        this.partidos = response.data;
+                        console.log(response.data);
+                        console.log('BUENAS');
+                        console.log(window.Laravel.user.rol_id);
+                        console.log('TARDES');
+
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
     },
-    methods: {
-
-    }
-}
-
+    methods: {}
+};
 </script>

@@ -45,7 +45,7 @@
                                 <label for="phone" class="col-md-4 col-form-label text-md-right">Phone</label>
                                 <div class="col-md-8">
                                     <input id="phone" type="phone" class="form-control" v-model="phone"
-                                           required autocomplete="off" placeholder="Pon el precio" min="9" max="9">
+                                           required autocomplete="off" min="8" max="9">
                                 </div>
                             </div>
 
