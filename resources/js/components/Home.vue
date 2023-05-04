@@ -1,23 +1,22 @@
 <template>
-    <div class="contenedor">
         <div class="seccion-principal">
-        <div class="carrusel-resultados" style="justify-content: space-between">
+        <div class="carrusel-resultados">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="row" style="width: 100%; margin: 0px">
+                        <div class="row rowcarrusel" style="width: 100%; margin: 0px">
                             <div class="col-6 boxl">
-                                Partido 1
+                                Rayo Vallecano Basket - FC Barcelona
                             </div>
                             <div class="col-6 boxr">
                                 Partido 2
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item active">
+                    <div class="carousel-item">
                         <div class="row">
                             <div class="col-6 boxl">
-                                Partido 3
+                                Rayo Vallecano Basket - FC Barcelona
                             </div>
                             <div class="col-6 boxr">
                                 Partido 4
@@ -35,6 +34,39 @@
                 </button>
             </div>
         </div>
+
+        <section class="carrusel-noticias">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://via.placeholder.com/800x400?text=Slide+1" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/800x400?text=Slide+2" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/800x400?text=Slide+3" alt="Slide 3">
+                    </div>
+                </div>
+
+                <!-- Botones de control de slides -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+
+        </section>
         <section class="cuadros">
             <div class="row w-100 m-0">
                 <div class="cuadro col-md-3">
@@ -159,7 +191,6 @@
             </div>
         </div>
 
-    </div>
 
 </template>
 
