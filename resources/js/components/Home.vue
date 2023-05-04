@@ -35,35 +35,62 @@
             </div>
         </div>
 
-        <section class="carrusel-noticias">
-            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-                </ol>
+        <section class="carrusel-noticias mb-3 w-100">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col">
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                            <!-- Slides -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://via.placeholder.com/800x400?text=Slide+1" class="d-block w-100" alt="Slide 1">
+                                    <!-- Contenido de la sección -->
+                                    <div class="carousel-caption d-md-block bg-black-50 py-3">
+                                        <h2 class="text-white fw-bold mb-0">Título de la sección<a href="#" class="btn btn-danger float-end">LEER MÁS</a></h2>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/800x400?text=Slide+2" class="d-block w-100" alt="Slide 2">
+                                    <!-- Contenido de la sección -->
+                                    <div class="carousel-caption d-md-block bg-black-50 py-3">
+                                        <h2 class="text-white fw-bold mb-0">Título de la sección<a href="#" class="btn btn-danger float-end">LEER MÁS</a></h2>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/800x400?text=Slide+3" class="d-block w-100" alt="Slide 3">
+                                    <!-- Contenido de la sección -->
+                                    <div class="carousel-caption d-md-block bg-black-50 py-3">
+                                        <h2 class="text-white fw-bold mb-0">Título de la sección<a href="#" class="btn btn-danger float-end">LEER MÁS</a></h2>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/800x400?text=Slide+4" class="d-block w-100" alt="Slide 4">
+                                    <!-- Contenido de la sección -->
+                                    <div class="carousel-caption d-md-block bg-black-50 py-3">
+                                        <h2 class="text-white fw-bold mb-0">Título de la sección<a href="#" class="btn btn-danger float-end">LEER MÁS</a></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Indicadores -->
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" class="active"></li>
+                                <li data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" class="active"></li>
+                                <li data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3" class="active"></li>
+                            </ol>
 
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://via.placeholder.com/800x400?text=Slide+1" alt="Slide 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://via.placeholder.com/800x400?text=Slide+2" alt="Slide 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://via.placeholder.com/800x400?text=Slide+3" alt="Slide 3">
+                            <!-- Botones de control -->
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Botones de control de slides -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
             </div>
 
         </section>

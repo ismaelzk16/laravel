@@ -58,6 +58,14 @@
                 <router-view></router-view>
         </div>
         </div>
+        <footer style="background-color: #e21921; color:#ffffff;">
+                <div style="text-align: center; padding-top: 10px;">
+                    <p>Copyright © Rayo Vallecano Baloncesto de Madrid SAD |
+                        <a href="#">Política de Privacidad</a> |
+                        <a href="#">Términos y Condiciones</a></p>
+                </div>
+
+        </footer>
         </template>
 <style>
 
