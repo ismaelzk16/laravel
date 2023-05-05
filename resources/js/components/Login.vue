@@ -55,7 +55,7 @@
         </div>
     </div>
 </template>
-
+//$id_rol = session('user.roles.0.id'); Para mostrarlo
 <script>
 export default {
     data() {

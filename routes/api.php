@@ -25,7 +25,7 @@ Route::post('logout', [UserController::class, 'logout'])->middleware(middleware:
 Route::post('crear', [EntradasController::class, 'crear']);
 
 Route::post('anadir', [PartidoController::class, 'add']);
-Route::get('partidos', [PartidoController::class, 'show'])->middleware('ComprobarRol:1');
+Route::get('partidos', [PartidoController::class, 'show']);
 Route::get('/partidos/{id}/editar', [PartidoController::class, 'editar']);
 
 

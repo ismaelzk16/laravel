@@ -15,9 +15,9 @@
 
 
 @if (Auth::check())
-    {{Auth::user()->roles }}
     <script>
 
+        {{!!Auth::user()->roles!!}}
         window.Laravel = {!!json_encode([
            'isLoggedin' => true,
            'user' => Auth::user()
