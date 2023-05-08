@@ -35,8 +35,8 @@
                     <td>{{partido.equipoVisitante}}</td>
                     <td>{{partido.ubicacion}}</td>
                     <td class="text-center">
-                        <router-link :to="{ name: 'editPartidos', params: { id: partido.id_partidos } }" class="btn btn-warning">Edit</router-link>
-                        <button class="btn btn-danger">Delete</button>
+                        <router-link :to="{ name: 'editPartidos', params: { id: partido.id } }" class="btn btn-warning">Edit</router-link>
+                        <button class="btn btn-danger" @click="deletePartido(partido.id)">Delete</button>
                     </td>
                 </tr>
                 </tbody>
@@ -58,24 +58,35 @@ export default {
         this.$axios
             .get('/sanctum/csrf-cookie')
             .then((response) => {
-                this.$axios
-                    .get('api/partidos')
-                    .then((response) => {
-                        this.partidos = response.data;
-                        console.log(response.data);
-                        console.log('BUENAS');
-                        console.log(window.Laravel.user.rol_id);
-                        console.log('TARDES');
-
-                    })
-                    .catch(function (error) {
-                        console.log(error);
-                    });
+                this.getPartidos();
             })
             .catch(function (error) {
                 console.log(error);
             });
     },
-    methods: {}
+    methods: {
+        getPartidos() {
+            this.$axios
+                .get('api/partidos')
+                .then((response) => {
+                    this.partidos = response.data;
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+        },
+        deletePartido(id) {
+            this.$axios
+                .delete(`api/partidos/${id}`)
+                .then((response) => {
+                    console.log(response.data.success);
+                    // volver a cargar los datos de los partidos
+                    this.getPartidos();
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+        }
+    }
 };
 </script>

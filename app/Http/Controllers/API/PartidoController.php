@@ -44,9 +44,42 @@ class PartidoController extends Controller
         return response()->json($response);
     }
 
-    public function editar($id)
+    public function edit($id)
+    {
+        $post = Partidos::find($id);
+        return response()->json($post);
+    }
+
+
+    public function update($id, Request $request)
     {
         $partido = Partidos::find($id);
-        return view('partidos.editar', compact('partido'));
+        $request->validate([
+            'name' => 'required',
+            'description' => 'required'
+        ]);
+
+        $input = $request->all();
+        $imageName = NULL;
+        $partido->update($input);
+
+
+        return response()->json(['success'=> 'Post update successfully']);
+    }
+
+    public function editarPartidos($id)
+    {
+        $post = Partidos::find($id);
+        return response()->json($post);
+    }
+
+
+    public function delete($id)
+    {
+        $partido = Partidos::find($id);
+        $partido->delete();
+        return response()->json(['success'=> 'Post deleted successfully']);
+
+
     }
 }

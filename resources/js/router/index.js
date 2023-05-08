@@ -60,9 +60,10 @@ export const routes = [
       component: AddPartidos
     },
     {
-    name: 'editPartidos',
-    path: '/editPartidos',
-    component: EditPartidos
+        path: '/partidos/:id/edit',
+        name: 'editPartidos',
+        component: EditPartidos,
+        props: true
     }
 ];
 
