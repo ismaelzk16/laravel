@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id('id');
             $table->integer('golesLocales')->nullable();
             $table->integer('golesVisitantes')->nullable();
-            $table->string('jornada');
+            $table->integer('jornada');
             $table->string('situacion');
             $table->date('fecha');
             $table->string('equipoLocal');

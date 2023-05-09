@@ -26,8 +26,8 @@ Route::post('crear', [EntradasController::class, 'crear']);
 
 Route::post('anadir', [PartidoController::class, 'add']);
 Route::get('partidos', [PartidoController::class, 'show']);
-Route::get('/partidos/{id}/editar', [PartidoController::class, 'editar']);
-Route::post('/partidos/{id}/editar', [PartidoController::class, 'update']);
+Route::get('/partidos/{id}/edit', [PartidoController::class, 'edit']);
+Route::post('/partidos/{id}/edit', [PartidoController::class, 'update']); /**/
 Route::delete('partidos/{id}', [PartidoController::class, 'delete']);
 
 

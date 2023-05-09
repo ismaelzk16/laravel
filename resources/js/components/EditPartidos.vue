@@ -4,15 +4,15 @@
         <form @submit.prevent="editarPartido">
             <div class="form-group">
                 <label for="goles-locales">Goles locales</label>
-                <input type="text" class="form-control" id="goles-locales" v-model="golesLocales">
+                <input type="number" class="form-control" id="goles-locales" v-model="golesLocales">
             </div>
             <div class="form-group">
                 <label for="goles-visitantes">Goles visitantes</label>
-                <input type="text" class="form-control" id="goles-visitantes" v-model="golesVisitantes">
+                <input type="number" class="form-control" id="goles-visitantes" v-model="golesVisitantes">
             </div>
             <div class="form-group">
                 <label for="jornada">Jornada</label>
-                <input type="text" class="form-control" id="jornada" v-model="jornada">
+                <input type="number" class="form-control" id="jornada" v-model="jornada">
             </div>
             <div class="form-group">
                 <label for="situacion">Situacion</label>
@@ -20,7 +20,7 @@
             </div>
             <div class="form-group">
                 <label for="fecha">Fecha</label>
-                <input type="text" class="form-control" id="fecha" v-model="fecha">
+                <input type="date" class="form-control" id="fecha" v-model="fecha">
             </div>
             <div class="form-group">
                 <label for="equipo-local">Equipo Local</label>
@@ -34,7 +34,8 @@
                 <label for="ubicacion">Ubicacion</label>
                 <input type="text" class="form-control" id="ubicacion" v-model="ubicacion">
             </div>
-            <button class="btn btn-danger" @click="editarPartido()">Update</button>
+            <route-link></route-link>
+            <button class="btn btn-danger" >Update</button>
         </form>
     </div>
 </template>
@@ -44,7 +45,7 @@ export default {
     props: ['id'],
     data() {
         return {
-            id:"",
+            // id:"",
             partido: {},
             golesLocales:"",
             golesVisitantes:"",
@@ -68,11 +69,24 @@ export default {
     },
     methods: {
         editarPartido() {
-            this.$axios.post(`/partidos/${this.id}/editar/`, this.partido)
+            console.log('ID :');
+            console.log(this.id);
+            const formData = new FormData();;
+            formData.append('golesLocales', this.golesLocales);
+            formData.append('golesVisitantes', this.golesVisitantes);
+            formData.append('jornada', this.jornada);
+            formData.append('situacion', this.situacion);
+            formData.append('fecha', this.fecha);
+            formData.append('equipoLocal', this.equipoLocal);
+            formData.append('equipoVisitante', this.equipoVisitante);
+            formData.append('ubicacion', this.ubicacion);
+            this.$axios.post(`/api/partidos/${this.id}/edit`, formData)
                 .then(response => {
-                    console.log(response.data.success)
+                    //console.log(response.data.success (Es este))
+                    console.log('response.data');
+                    console.log(response.data);
                     // redirigir a la página de lista de partidos
-                    this.$router.push({ name: 'allPartidos' })
+                    //this.$router.push({ name: 'allPartidos' })
                 })
                 .catch(error => {
                     console.log(error)

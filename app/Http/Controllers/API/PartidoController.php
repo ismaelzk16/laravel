@@ -51,21 +51,38 @@ class PartidoController extends Controller
     }
 
 
+
     public function update($id, Request $request)
     {
         $partido = Partidos::find($id);
         $request->validate([
-            'name' => 'required',
-            'description' => 'required'
+            'equipoLocal' => 'required',
+            'equipoVisitante' => 'required',
+            'golesLocales' => 'nullable|integer',
+            'golesVisitantes' => 'nullable|integer',
+            'jornada' => 'required',
+            'situacion' => 'required',
+            'ubicacion' => 'required'
         ]);
-
         $input = $request->all();
-        $imageName = NULL;
         $partido->update($input);
 
-
-        return response()->json(['success'=> 'Post update successfully']);
+        return response()->json(['success'=> 'Partido actualizado correctamente']);
     }
+
+
+
+//    public function update($id, Request $request)
+//    {
+//        $partido = Partidos::find($id);
+////        $request->validate([
+////            'name' => 'required',
+////            'description' => 'required'
+////        ]);
+//        $input = $request->all();
+//        $partido->update($input);
+//        return response()->json(['success'=> 'Post update successfully']);
+//    }
 
     public function editarPartidos($id)
     {
