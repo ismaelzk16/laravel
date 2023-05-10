@@ -70,6 +70,11 @@ class UserController extends Controller
             'message' => $message,
         ];
     }
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     //
 }
 ?>

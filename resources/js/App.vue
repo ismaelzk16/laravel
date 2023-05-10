@@ -30,16 +30,16 @@
                 <div class="subnav">
                     <button class="subnavbtn">EQUIPO</button>
                     <div class="subnav-content">
-                        <a href="#team">PARTIDOS</a>
-                        <a href="#company">PABELLÓN</a>
+                        <a href="/plantilla">PLANTILLA</a>
+                        <a href="/pabellon">PABELLÓN</a>
                     </div>
                 </div>
                 <div class="subnav">
                     <button class="subnavbtn">ENTRADAS</button>
                     <div class="subnav-content">
-                        <a href="#company">PARTIDOS</a>
-                        <a href="#team">CALENDARIO</a>
-                        <a href="#careers">COMPRA</a>
+                        <a href="/partidos">PARTIDOS</a>
+                        <a href="/calendario">CALENDARIO</a>
+                        <a href="/compra">COMPRA</a>
                     </div>
                 </div>
                 <div class="subnav">
@@ -47,7 +47,7 @@
                     <div class="subnav-content">
                         <a href="/login">LOG IN</a>
                         <a href="/register">REGISTRO</a>
-                        <a href="#careers" v-if="isLoggedin">LOG OUT</a>
+                        <a href="/logout" v-if="isLoggedin">CERRAR SESION: <!--({{ Auth::user()->name }})--></a>
                     </div>
                 </div>
                     <div class="navbar-inferior"></div>
