@@ -7,7 +7,6 @@
                     <button class="btn btn-success" type="button" @click="this.$router.push('/partidos/add')">New Post</button>
                 </div>
             </div>
-
             <table class="table table-hover table-sm">
                 <thead class="bg-dark text-light">
                 <tr>
@@ -66,6 +65,7 @@ export default {
     },
     methods: {
         getPartidos() {
+            console.log("Nombre de rol: " + "{{ Auth::user()->roles[0]->nombre_rol }}");
             this.$axios
                 .get('api/partidos')
                 .then((response) => {
