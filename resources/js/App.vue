@@ -1,43 +1,95 @@
 <template>
-    <div style="background-size: 90%; background-color: #007dbe; max-width: 100%;">
-        <div style="width: 100%; background-color: #fff;">
+    <div class="logoweb">
+        <div style="width: 100%; background-color: #fff; padding: 0 15% 0 15%;">
               <img style="background-color: #fff" src="http://statics.proyectoclubes.com/images/header/logo-rayo.png?20230103174823" alt="Logo Rayo" class="loading" data-was-processed="true">
         </div>
+        <div class="conenedor-nav">
+        <div class="conenedor-nav-red">
                 <div class="navbar"> <!--v-if=" isLoggedin "-->
-                    <router-link to="/" class="nav-item nav-link">Home</router-link>
-                    <router-link to="/posts" class="nav-item nav-link">Dashboard</router-link>
-                    <router-link to="/users" class="nav-item nav-link">Users</router-link>
-                    <router-link v-if="isLoggedin" to="/addPartidos" class="nav-item nav-link">Add Partidos</router-link>
-                    <router-link v-if="isLoggedin" to="/partidos" class="nav-item nav-link">Partidos</router-link>
-                    <router-link to="/login" class="nav-item nav-link">Login</router-link>
-                    <router-link to="/register" class="nav-item nav-link">Register</router-link>
-                    <a class="nav-item nav-link" style="cursor: pointer;" @click="logout">Logout</a>
+
+<!--                    <router-link to="/" class="subnavbtn">Home</router-link>-->
+<!--                    <router-link to="/dashboard" class="subnavbtn">Dashboard</router-link>-->
+<!--                    <router-link to="/users" class="subnavbtn">Users</router-link>-->
+<!--                    <router-link v-if="isLoggedin" to="/addPartidos" class="subnavbtn">Add Partidos</router-link>-->
+<!--                    <router-link to="/login" class="subnavbtn">Login</router-link>-->
+<!--                    <router-link to="/register" class="nav-item nav-link">Register</router-link>-->
+<!--                    <a class="nav-item nav-link" style="cursor: pointer;" @click="logout">Logout</a>-->
+<!--                <div class="subnav">-->
+<!--                    <router-link to="/" class="subnavbtn" :class="{ activenav: currentPage === '/' }">Home</router-link>-->
+<!--                </div>-->
                 <div class="subnav">
-                    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+                    <button class="subnavbtn">HOME</button>
                     <div class="subnav-content">
-                        <a href="#company">Company</a>
-                        <a href="#team">Team</a>
-                        <a href="#careers">Careers</a>
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <router-view></router-view>
-            </div>
+                <div class="subnav">
+                    <button class="subnavbtn">NOTICIAS</button>
+                    <div class="subnav-content">
+                    </div>
+                </div>
+                <div class="subnav">
+                    <button class="subnavbtn">EQUIPO</button>
+                    <div class="subnav-content">
+                        <a href="#team">PARTIDOS</a>
+                        <a href="#company">PABELLÓN</a>
+                    </div>
+                </div>
+                <div class="subnav">
+                    <button class="subnavbtn">ENTRADAS</button>
+                    <div class="subnav-content">
+                        <a href="#company">PARTIDOS</a>
+                        <a href="#team">CALENDARIO</a>
+                        <a href="#careers">COMPRA</a>
+                    </div>
+                </div>
+                <div class="subnav">
+                    <button class="subnavbtn">USUARIO</button>
+                    <div class="subnav-content">
+                        <a href="/login">LOG IN</a>
+                        <a href="/register">REGISTRO</a>
+                        <a href="#careers" v-if="isLoggedin">LOG OUT</a>
+                    </div>
+                </div>
+                    <div class="navbar-inferior"></div>
+                </div>
+                </div>
         </div>
+        <div class="contenedor">
+                <router-view></router-view>
+        </div>
+        </div>
+        <footer style="background-color: #e21921; color:#ffffff;">
+                <div style="text-align: center; padding-top: 10px;">
+                    <p>Copyright © Rayo Vallecano Baloncesto de Madrid SAD |
+                        <a href="#">Política de Privacidad</a> |
+                        <a href="#">Términos y Condiciones</a></p>
+                </div>
+
+        </footer>
         </template>
-        <script>
+<style>
+
+</style>
+<script>
         export default {
             name: "App",
             data() {
                 return {
                     isLoggedin: false,
+                    currentPage: ''
                 }
+            },
+            mounted() {
+                this.currentPage = window.location.pathname;
             },
             created() {
                 if(window.Laravel.isLoggedin){
                     this.isLoggedin =true;
-                }
+                };
+                this.currentPage = this.$route.path;
+                this.$watch('$route', () => {
+                    this.currentPage = this.$route.path;
+                });
             },
             methods: {
                 logout(e) {
@@ -55,9 +107,16 @@
                                 console.error(error);
                             });
                     })
-
-
+                },
+                    computed: {
+                        activeButton()
+                        {
+                            return {
+                                'nav-button': true,
+                                'active': this.currentPage === this.$route.path
+                            }
+                        }
+                    }
                 }
-            },
-        }
+            }
         </script>

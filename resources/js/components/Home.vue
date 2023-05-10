@@ -1,23 +1,22 @@
 <template>
-    <div class="contenedor">
         <div class="seccion-principal">
-        <div class="carrusel-resultados" style="justify-content: space-between">
+        <div class="carrusel-resultados">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="row" style="width: 100%; margin: 0px">
+                        <div class="row rowcarrusel" style="width: 100%; margin: 0">
                             <div class="col-6 boxl">
-                                Partido 1
+                                Rayo Vallecano Basket - FC Barcelona
                             </div>
                             <div class="col-6 boxr">
                                 Partido 2
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item active">
+                    <div class="carousel-item">
                         <div class="row">
                             <div class="col-6 boxl">
-                                Partido 3
+                                Rayo Vallecano Basket - FC Barcelona
                             </div>
                             <div class="col-6 boxr">
                                 Partido 4
@@ -26,46 +25,138 @@
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" style="width: 20px;" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon" style="width: 24px; height: 40px;" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" style="width: 20px;" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon" style="width: 24px; height: 40px" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
+
+        <section class="carrusel-noticias mb-3 w-100">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col">
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                            <!-- Slides -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="background">
+                                        <div class="foreground">
+                                            <div> <h2 class="text-white fs-4 fw-bold mb-0 w-100">Rayo Vallecano - FC Barcelona | 17/05 20:00h</h2></div>
+                                            <a href="#" class="btn btn-danger float-end">LEER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="background">
+                                        <div class="foreground">
+                                            <div> <h2 class="text-white fs-4 fw-bold mb-0 w-100">Rayo Vallecano - FC Barcelona | 17/05 20:00h</h2></div>
+                                            <a href="#" class="btn btn-danger float-end">LEER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="background">
+                                        <div class="foreground">
+                                            <div> <h2 class="text-white fs-4 fw-bold mb-0 w-100">Rayo Vallecano - FC Barcelona | 17/05 20:00h</h2></div>
+                                            <a href="#" class="btn btn-danger float-end">LEER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="background">
+                                        <div class="foreground">
+                                            <div> <h2 class="text-white fs-4 fw-bold mb-0 w-100">Rayo Vallecano - FC Barcelona | 17/05 20:00h</h2></div>
+                                            <a href="#" class="btn btn-danger float-end">LEER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" style="width: 4vh; height: 77vh;" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" style="width: 4vh; height: 77vh;" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="black-div">
+
+                    <div class="child-div">
+                        <div class="child-img">
+                        <div class="date-time">
+                            <p class="date">01/06/2023 10:30</p>
+                            <p class="title">Título de la imagen</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="child-div">
+                        <div class="child-img">
+                        <div class="date-time">
+                            <p class="date">01/06/2023 10:30</p>
+                            <p class="title">Título de la imagen</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="child-div">
+                        <div class="child-img">
+                        <div class="date-time">
+                            <p class="date">01/06/2023 10:30</p>
+                            <p class="title">Título de la imagen</p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="child-div"><a href="/login" >
+                        <div class="child-img">
+                        <div class="date-time">
+                            <p class="date">01/06/2023 10:30</p>
+                            <p class="title">Título de la imagen</p>
+                        </div>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <section class="cuadros">
             <div class="row w-100 m-0">
                 <div class="cuadro col-md-3">
                     <a href="" class="entrada-banner"></a>
                 </div>
                 <div class="cuadro col-md-3" >
-                    <a href="" class="twitter-banner"></a>
+                    <a href="https://twitter.com/RayoVallecano" class="twitter-banner"></a>
                 </div>
                 <div class="cuadro col-md-3">
-                    <a href="" class="instagram-banner"></a>
+                    <a href="https://www.instagram.com/rayovallecano/" class="instagram-banner"></a>
                 </div>
                 <div class="cuadro-derecha col-md-3">
-                    <a href="" class="youtube-banner"></a>
+                    <a href="https://www.youtube.com/user/rayovallecanotv" class="youtube-banner"></a>
                 </div>
             </div>
         </section>
         <section class="imagenes">
             <div class="imagen">
-                <img src="">
+                <img src="" alt="">
                 <p>Texto de la imagen 1</p>
             </div>
             <div class="imagen">
-                <img src="">
+                <img src="" alt="">
                 <p>Texto de la imagen 2</p>
             </div>
             <div class="imagen">
-                <img src="">
+                <img src="" alt="">
                 <p>Texto de la imagen 3</p>
             </div>
             <div class="imagen">
-                <img src="">
+                <img src="" alt="">
                 <p>Texto de la imagen 4</p>
             </div>
         </section>
@@ -158,10 +249,9 @@
                 <!-- Aquí irían más eventos -->
             </div>
         </div>
-
-    </div>
-
 </template>
+
+
 
 <script>
 export default {
