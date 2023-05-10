@@ -18,36 +18,36 @@
 <!--                    <router-link to="/" class="subnavbtn" :class="{ activenav: currentPage === '/' }">Home</router-link>-->
 <!--                </div>-->
                 <div class="subnav">
-                    <button class="subnavbtn">Home</button>
+                    <button class="subnavbtn">HOME</button>
                     <div class="subnav-content">
                     </div>
                 </div>
                 <div class="subnav">
-                    <button class="subnavbtn">Noticias</button>
+                    <button class="subnavbtn">NOTICIAS</button>
                     <div class="subnav-content">
                     </div>
                 </div>
                 <div class="subnav">
-                    <button class="subnavbtn">Equipo</button>
+                    <button class="subnavbtn">EQUIPO</button>
                     <div class="subnav-content">
-                        <a href="#team">Partidos</a>
-                        <a href="#company">Plantilla</a>
+                        <a href="#team">PARTIDOS</a>
+                        <a href="#company">PABELLÓN</a>
                     </div>
                 </div>
                 <div class="subnav">
-                    <button class="subnavbtn">Entradas</button>
+                    <button class="subnavbtn">ENTRADAS</button>
                     <div class="subnav-content">
-                        <a href="#company">Calendario</a>
-                        <a href="#team">Compra</a>
-                        <a href="#careers">Pabellón</a>
+                        <a href="#company">PARTIDOS</a>
+                        <a href="#team">CALENDARIO</a>
+                        <a href="#careers">COMPRA</a>
                     </div>
                 </div>
                 <div class="subnav">
-                    <button class="subnavbtn">Usuario</button>
+                    <button class="subnavbtn">USUARIO</button>
                     <div class="subnav-content">
-                        <a href="/login">Log In</a>
-                        <a href="/register">Registro</a>
-                        <a href="#careers" v-if="isLoggedin">Log Out</a>
+                        <a href="/login">LOG IN</a>
+                        <a href="/register">REGISTRO</a>
+                        <a href="#careers" v-if="isLoggedin">LOG OUT</a>
                     </div>
                 </div>
                     <div class="navbar-inferior"></div>

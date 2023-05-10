@@ -4,7 +4,7 @@
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="row rowcarrusel" style="width: 100%; margin: 0px">
+                        <div class="row rowcarrusel" style="width: 100%; margin: 0">
                             <div class="col-6 boxl">
                                 Rayo Vallecano Basket - FC Barcelona
                             </div>
@@ -43,57 +43,89 @@
                             <!-- Slides -->
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="https://via.placeholder.com/800x400?text=Slide+1" class="d-block w-100" alt="Slide 1">
-                                    <!-- Contenido de la sección -->
-                                    <div class="carousel-caption d-md-block bg-black-50 py-3">
-                                        <h2 class="text-white fw-bold mb-0">Título de la sección<a href="#" class="btn btn-danger float-end">LEER MÁS</a></h2>
+                                    <div class="background">
+                                        <div class="foreground">
+                                            <div> <h2 class="text-white fs-4 fw-bold mb-0 w-100">Rayo Vallecano - FC Barcelona | 17/05 20:00h</h2></div>
+                                            <a href="#" class="btn btn-danger float-end">LEER MÁS</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://via.placeholder.com/800x400?text=Slide+2" class="d-block w-100" alt="Slide 2">
-                                    <!-- Contenido de la sección -->
-                                    <div class="carousel-caption d-md-block bg-black-50 py-3">
-                                        <h2 class="text-white fw-bold mb-0">Título de la sección<a href="#" class="btn btn-danger float-end">LEER MÁS</a></h2>
+                                    <div class="background">
+                                        <div class="foreground">
+                                            <div> <h2 class="text-white fs-4 fw-bold mb-0 w-100">Rayo Vallecano - FC Barcelona | 17/05 20:00h</h2></div>
+                                            <a href="#" class="btn btn-danger float-end">LEER MÁS</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://via.placeholder.com/800x400?text=Slide+3" class="d-block w-100" alt="Slide 3">
-                                    <!-- Contenido de la sección -->
-                                    <div class="carousel-caption d-md-block bg-black-50 py-3">
-                                        <h2 class="text-white fw-bold mb-0">Título de la sección<a href="#" class="btn btn-danger float-end">LEER MÁS</a></h2>
+                                    <div class="background">
+                                        <div class="foreground">
+                                            <div> <h2 class="text-white fs-4 fw-bold mb-0 w-100">Rayo Vallecano - FC Barcelona | 17/05 20:00h</h2></div>
+                                            <a href="#" class="btn btn-danger float-end">LEER MÁS</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://via.placeholder.com/800x400?text=Slide+4" class="d-block w-100" alt="Slide 4">
-                                    <!-- Contenido de la sección -->
-                                    <div class="carousel-caption d-md-block bg-black-50 py-3">
-                                        <h2 class="text-white fw-bold mb-0">Título de la sección<a href="#" class="btn btn-danger float-end">LEER MÁS</a></h2>
+                                    <div class="background">
+                                        <div class="foreground">
+                                            <div> <h2 class="text-white fs-4 fw-bold mb-0 w-100">Rayo Vallecano - FC Barcelona | 17/05 20:00h</h2></div>
+                                            <a href="#" class="btn btn-danger float-end">LEER MÁS</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Indicadores -->
-                            <ol class="carousel-indicators">
-                                <li data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active"></li>
-                                <li data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" class="active"></li>
-                                <li data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" class="active"></li>
-                                <li data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3" class="active"></li>
-                            </ol>
-
-                            <!-- Botones de control -->
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Anterior</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Siguiente</span>
-                            </a>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" style="width: 4vh; height: 77vh;" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" style="width: 4vh; height: 77vh;" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="black-div">
 
+                    <div class="child-div">
+                        <div class="child-img">
+                        <div class="date-time">
+                            <p class="date">01/06/2023 10:30</p>
+                            <p class="title">Título de la imagen</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="child-div">
+                        <div class="child-img">
+                        <div class="date-time">
+                            <p class="date">01/06/2023 10:30</p>
+                            <p class="title">Título de la imagen</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="child-div">
+                        <div class="child-img">
+                        <div class="date-time">
+                            <p class="date">01/06/2023 10:30</p>
+                            <p class="title">Título de la imagen</p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="child-div"><a href="/login" >
+                        <div class="child-img">
+                        <div class="date-time">
+                            <p class="date">01/06/2023 10:30</p>
+                            <p class="title">Título de la imagen</p>
+                        </div>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
         </section>
+
+
         <section class="cuadros">
             <div class="row w-100 m-0">
                 <div class="cuadro col-md-3">
@@ -112,19 +144,19 @@
         </section>
         <section class="imagenes">
             <div class="imagen">
-                <img src="">
+                <img src="" alt="">
                 <p>Texto de la imagen 1</p>
             </div>
             <div class="imagen">
-                <img src="">
+                <img src="" alt="">
                 <p>Texto de la imagen 2</p>
             </div>
             <div class="imagen">
-                <img src="">
+                <img src="" alt="">
                 <p>Texto de la imagen 3</p>
             </div>
             <div class="imagen">
-                <img src="">
+                <img src="" alt="">
                 <p>Texto de la imagen 4</p>
             </div>
         </section>
@@ -217,9 +249,9 @@
                 <!-- Aquí irían más eventos -->
             </div>
         </div>
-
-
 </template>
+
+
 
 <script>
 export default {
