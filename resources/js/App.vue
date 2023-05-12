@@ -47,7 +47,8 @@
                     <div class="subnav-content">
                         <a href="/login">LOG IN</a>
                         <a href="/register">REGISTRO</a>
-                        <a href="/logout" v-if="isLoggedin">CERRAR SESION: <!--({{ Auth::user()->name }})--></a>
+                        <a href="/usersPanel">USERS</a>
+                        <a href="/logout" v-if="isLoggedin">CERRAR SESION <!--({{ Auth::user()->name }})--></a>
                     </div>
                 </div>
                     <div class="navbar-inferior"></div>

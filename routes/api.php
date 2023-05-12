@@ -21,13 +21,17 @@ use App\Http\Controllers\API\PostController;
 Route::post('login', [UserController::class, 'login']);
 Route::post('register', [UserController::class, 'register']);
 Route::post('logout', [UserController::class, 'logout'])->middleware(middleware:'auth:sanctum');
+Route::get('users', [UserController::class, 'show']);
+Route::get('/users/{id}/edit', [UserController::class, 'edit']);
+Route::post('/users/{id}/edit', [UserController::class, 'update']);
+Route::delete('users/{id}', [UserController::class, 'delete']);
 
 Route::post('crear', [EntradasController::class, 'crear']);
 
 Route::post('anadir', [PartidoController::class, 'add']);
 Route::get('partidos', [PartidoController::class, 'show']);
 Route::get('/partidos/{id}/edit', [PartidoController::class, 'edit']);
-Route::post('/partidos/{id}/edit', [PartidoController::class, 'update']); /**/
+Route::post('/partidos/{id}/edit', [PartidoController::class, 'update']);
 Route::delete('partidos/{id}', [PartidoController::class, 'delete']);
 
 

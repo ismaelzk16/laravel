@@ -10,6 +10,9 @@ import Users from '../components/Users.vue';
 import Partidos from '../components/Partidos.vue';
 import AddPartidos from '../components/AddPartidos.vue';
 import EditPartidos from '../components/EditPartidos.vue';
+import UsersPanel from '../components/UsersPanel.vue';
+import AddUsers from '../components/AddUsers.vue';
+import EditUsers from '../components/EditUsers.vue';
 
 export const routes = [
 
@@ -64,6 +67,21 @@ export const routes = [
         name: 'editPartidos',
         component: EditPartidos,
         props: true
+    },
+    {
+        name: 'usersPanel',
+        path: '/usersPanel',
+        component: UsersPanel,
+    },
+    {
+        name: 'addUsers',
+        path: '/addUsers',
+        component: AddUsers,
+    },
+    {
+        name: 'editUsers',
+        path: '/users/:id/edit',
+        component: EditUsers,
     }
 ];
 

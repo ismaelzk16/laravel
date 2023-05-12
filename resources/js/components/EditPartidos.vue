@@ -69,8 +69,6 @@ export default {
     },
     methods: {
         editarPartido() {
-            console.log('ID :');
-            console.log(this.id);
             const formData = new FormData();;
             formData.append('golesLocales', this.golesLocales);
             formData.append('golesVisitantes', this.golesVisitantes);
