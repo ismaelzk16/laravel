@@ -2,9 +2,9 @@
     <div class="card">
         <div class="card-body">
             <div class="d-flex justify-content-between pb-2 mb-2">
-                <h5 class="card-title">Panel de control</h5>
+                <h5 class="card-title">Comprar entradas</h5>
                 <div>
-                    <button class="btn btn-success" type="button" @click="this.$router.push('/addPartidos')">New Post</button>
+                    <button class="btn btn-success" type="button" @click="this.$router.push('/addUsers')">New Post</button>
                 </div>
             </div>
             <table class="table table-hover table-sm">
@@ -23,7 +23,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr v-for="(partido, index) in partidos.filter(p => p.situacion !== 'done')" :key="index">
+                <tr v-for="(partido, index) in partidos" :key="index">
                     <td class="text-center">{{index}}</td>
                     <td>{{partido.golesLocales}}</td>
                     <td>{{partido.golesVisitantes}}</td>
@@ -34,8 +34,7 @@
                     <td>{{partido.equipoVisitante}}</td>
                     <td>{{partido.ubicacion}}</td>
                     <td class="text-center">
-                        <router-link :to="{ name: 'editPartidos', params: { id: partido.id } }" class="btn btn-warning">Edit</router-link>
-                        <button class="btn btn-danger" @click="deletePartido(partido.id)">Delete</button>
+                        <router-link :to="{ name: 'Entradas', params: { id: partido.id } }" class="btn btn-warning">Compra Entradas</router-link>
                     </td>
                 </tr>
                 </tbody>
@@ -75,18 +74,6 @@ export default {
                     console.log(error);
                 });
         },
-        deletePartido(id) {
-            this.$axios
-                .delete(`api/partidos/${id}`)
-                .then((response) => {
-                    console.log(response.data.success);
-                    // volver a cargar los datos de los partidos
-                    this.getPartidos();
-                })
-                .catch(function (error) {
-                    console.log(error);
-                });
-        }
     }
 };
 </script>

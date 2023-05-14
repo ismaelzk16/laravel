@@ -39,7 +39,8 @@
                     <div class="subnav-content">
                         <a href="/partidos">PARTIDOS</a>
                         <a href="/calendario">CALENDARIO</a>
-                        <a href="/compra">COMPRA</a>
+                        <a href="/partidosCompra">COMPRA</a>
+                        <a href="/carrito">CARRITO</a>
                     </div>
                 </div>
                 <div class="subnav">
@@ -48,7 +49,7 @@
                         <a href="/login">LOG IN</a>
                         <a href="/register">REGISTRO</a>
                         <a href="/usersPanel">USERS</a>
-                        <a href="/logout" v-if="isLoggedin">CERRAR SESION <!--({{ Auth::user()->name }})--></a>
+                        <a @click="logout" v-if="isLoggedin">CERRAR SESION</a>
                     </div>
                 </div>
                     <div class="navbar-inferior"></div>

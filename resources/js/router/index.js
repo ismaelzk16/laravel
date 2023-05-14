@@ -8,11 +8,14 @@ import Posts from '../components/Post.vue';
 import EditPosts from '../components/EditPost.vue';
 import Users from '../components/Users.vue';
 import Partidos from '../components/Partidos.vue';
+import PartidosCompra from '../components/PartidosCompra.vue';
 import AddPartidos from '../components/AddPartidos.vue';
 import EditPartidos from '../components/EditPartidos.vue';
 import UsersPanel from '../components/UsersPanel.vue';
-import AddUsers from '../components/AddUsers.vue';
-import EditUsers from '../components/EditUsers.vue';
+import Entradas from '../components/Entradas.vue';
+import Carrito from '../components/Carrito.vue';
+// import AddUsers from '../components/AddUsers.vue';
+// import EditUsers from '../components/EditUsers.vue';
 
 export const routes = [
 
@@ -58,6 +61,11 @@ export const routes = [
       component: Partidos
     },
     {
+      name: 'partidosCompra',
+      path: '/partidosCompra',
+      component: PartidosCompra
+    },
+    {
       name: 'addPartidos',
       path: '/addPartidos',
       component: AddPartidos
@@ -74,15 +82,25 @@ export const routes = [
         component: UsersPanel,
     },
     {
-        name: 'addUsers',
-        path: '/addUsers',
-        component: AddUsers,
+      name: 'Entradas',
+      path: '/entradas/:id',
+      component: Entradas,
     },
     {
-        name: 'editUsers',
-        path: '/users/:id/edit',
-        component: EditUsers,
-    }
+      name: 'carrito',
+      path: '/carrito',
+      component: Carrito,
+    },
+    // {
+    //     name: 'addUsers',
+    //     path: '/addUsers',
+    //     component: AddUsers,
+    // },
+    // {
+    //     name: 'editUsers',
+    //     path: '/users/:id/edit',
+    //     component: EditUsers,
+    // }
 ];
 
 const router = createRouter({

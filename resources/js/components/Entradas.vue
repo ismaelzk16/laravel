@@ -1,80 +1,88 @@
 <template>
-
-    <div class="card">
-        <div class="card-body">
-            <div class="d-flex justify-content-between pb-2 mb-2">
-                <h5 class="card-title">All Posts Data</h5>
-                <div>
-                    <button class="btn btn-success" type="button" @click="this.$router.push('/partidos/add')">New Post</button>
-                </div>
-            </div>
-
-            <table class="table table-hover table-sm">
-                <thead class="bg-dark text-light">
-                <tr>
-                    <th>#</th>
-                    <th>Goles Locales</th>
-                    <th>Goles Visitantes</th>
-                    <th>Jornada</th>
-                    <th>Situacion</th>
-                    <th>Fecha</th>
-                    <th>Equipo Local</th>
-                    <th>Equipo Visitante</th>
-                    <th>Ubicacion</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr v-for="(partido, index) in partidos" :key="index">
-                    <td class="text-center">{{index}}</td>
-                    <td>{{partido.golesLocales}}</td>
-                    <td>{{partido.golesVisitantes}}</td>
-                    <td>{{partido.jornada}}</td>
-                    <td>{{partido.situacion}}</td>
-                    <td>{{partido.fecha}}</td>
-                    <td>{{partido.equipoLocal}}</td>
-                    <td>{{partido.equipoVisitante}}</td>
-                    <td>{{partido.ubicacion}}</td>
-                    <td class="text-center">
-                        <!--                        <router-link :to="{name:'editpost'}" class="btn btn-warning">Edit</router-link>-->
-                        <!--                        <button class="btn btn-danger">Delete</button>-->
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-
-
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Sección</h3>
+          <div class="form-group">
+            <label>Selecciona una sección:</label>
+            <select class="form-control" v-model="selectedSeccion">
+              <option v-for="seccion in secciones" :value="seccion">{{seccion}}</option>
+            </select>
+          </div>
         </div>
+        <div class="col-sm-4">
+          <h3>Fila y Número</h3>
+          <div class="form-group">
+            <label>Selecciona una fila:</label>
+            <select class="form-control" v-model="selectedFila" @change="calcularPrecio()">
+              <option v-for="fila in filas" :value="fila">{{fila}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Selecciona un número:</label>
+            <select class="form-control" v-model="selectedNumero">
+              <option v-for="numero in numeros" :value="numero">{{numero}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <h3>Precio</h3>
+          <p>{{precio}}€</p>
+        </div>
+        <button class="btn btn-primary" @click="guardarInformacion()">Guardar</button>
+      </div>
     </div>
-
-
-</template>
-
-<script>
-export default {
+  </template>
+  
+  <script>
+  import axios from 'axios';
+  
+  export default {
     data() {
-        return {
-            partidos: [],
-            strSuccess: '',
-            strError: ''
-        }
+      return {
+        secciones: ["Norte", "Este", "Sur", "Oeste"],
+        filas: ["A", "B", "C", "D", "E"],
+        numeros: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+        selectedSeccion: "",
+        selectedFila: "",
+        selectedNumero: "",
+        precio: 0
+      };
     },
-    created() {
-        this.$axios.get('/sanctum/csrf-cookie').then(response => {
-                this.$axios.get('api/partidos')
-                    .then(response => {
-                        this.partidos = response.data;
-                        console.log('response.data');
-                        console.log(response.data);
-                    })
-                    .catch(function (error) {
-                        console.log(error);
-                    });
-            }
-        );
+    watch: {
+      // Aquí irían los watchers que ya tienes
     },
     methods: {
-
+      guardarInformacion() {
+        const idPartido = this.$route.params.id; // Se obtiene la ID del partido desde la ruta
+        const datos = {
+            seccion: this.selectedSeccion,
+            fila: this.selectedFila,
+            numero: this.selectedNumero,
+            precio: this.precio,
+            id_partido: idPartido
+        };
+        axios.post('/api/entradas', datos)
+            .then(response => {
+            // Aquí se podría mostrar un mensaje de éxito y redirigir al usuario a otra página
+            console.log("Entrada guardada");
+            })
+            .catch(error => {
+            console.error(error);
+            // Aquí se podría mostrar un mensaje de error al usuario
+            });
+      },
+      calcularPrecio() {
+        if (this.selectedFila === "A" || this.selectedFila === "B") {
+            this.precio = 30;
+        } else if (this.selectedFila === "C") {
+            this.precio = 25;
+        } else if (this.selectedFila === "D" || this.selectedFila === "E") {
+            this.precio = 20;
+        }
+      } 
     }
-}
+  };
 
-</script>
+  </script>
+  

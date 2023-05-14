@@ -14,10 +14,15 @@
                 <label for="jornada">Jornada</label>
                 <input type="number" class="form-control" id="jornada" v-model="jornada">
             </div>
-            <div class="form-group">
-                <label for="situacion">Situacion</label>
-                <input type="text" class="form-control" id="situacion" v-model="situacion">
-            </div>
+            <div class="form-group row mt-1">
+                                <label for="situacion" class="col-md-4 col-form-label text-md-right">Situacion</label>
+                                <div class="col-md-8">
+                                    <input type="radio" id="situacion" name="situacion" value="done" v-model="situacion">
+                                    <label for="html">Hecho</label>
+                                    <input type="radio" id="situacion" name="situacion" value="undone" v-model="situacion">
+                                    <label for="css">Por hacerse</label><br>
+                                </div>
+                            </div>
             <div class="form-group">
                 <label for="fecha">Fecha</label>
                 <input type="date" class="form-control" id="fecha" v-model="fecha">
