@@ -1,6 +1,6 @@
 <template>
     <div class="logoweb">
-        <div style="width: 100%; background-color: #fff; padding: 0 15% 0 15%;">
+        <div style="width: 100%;background-color: #fff; padding: 0 15% 0 15%;">
               <img style="background-color: #fff" src="http://statics.proyectoclubes.com/images/header/logo-rayo.png?20230103174823" alt="Logo Rayo" class="loading" data-was-processed="true">
         </div>
         <div class="conenedor-nav">
@@ -18,24 +18,24 @@
 <!--                    <router-link to="/" class="subnavbtn" :class="{ activenav: currentPage === '/' }">Home</router-link>-->
 <!--                </div>-->
                 <div class="subnav">
-                    <button class="subnavbtn">HOME</button>
+                    <button class="subnavbtn"><a href="/">HOME</a></button>
                     <div class="subnav-content">
                     </div>
                 </div>
                 <div class="subnav">
-                    <button class="subnavbtn">NOTICIAS</button>
+                    <button class="subnavbtn"><a href="/noticias">NOTICIAS</a></button>
                     <div class="subnav-content">
                     </div>
                 </div>
                 <div class="subnav">
-                    <button class="subnavbtn">EQUIPO</button>
+                    <button class="subnavbtn"><a href="/equipo">EQUIPO</a></button>
                     <div class="subnav-content">
                         <a href="/plantilla">PLANTILLA</a>
                         <a href="/pabellon">PABELLÓN</a>
                     </div>
                 </div>
                 <div class="subnav">
-                    <button class="subnavbtn">ENTRADAS</button>
+                    <button class="subnavbtn"><a href="/entradas">ENTRADAS</a></button>
                     <div class="subnav-content">
                         <a href="/partidos">PARTIDOS</a>
                         <a href="/calendario">CALENDARIO</a>
@@ -43,11 +43,11 @@
                     </div>
                 </div>
                 <div class="subnav">
-                    <button class="subnavbtn">USUARIO</button>
+                    <button class="subnavbtn" ><a href="">USUARIO</a></button>
                     <div class="subnav-content">
                         <a href="/login">LOG IN</a>
                         <a href="/register">REGISTRO</a>
-                        <a href="/logout" v-if="isLoggedin">CERRAR SESION: <!--({{ Auth::user()->name }})--></a>
+                        <a href="/logout" v-if="isLoggedin">CERRAR SESION: </a>
                     </div>
                 </div>
                     <div class="navbar-inferior"></div>
@@ -64,6 +64,32 @@
                         <a href="#">Política de Privacidad</a> |
                         <a href="#">Términos y Condiciones</a></p>
                 </div>
+            <footer>
+                <ul class="footer-menu">
+                    <li class="footer-item"><a href="/">HOME</a></li>
+                    <li class="footer-item"><a href="/noticias">NOTICIAS</a></li>
+                    <li class="footer-item"><a href="/equipo">EQUIPO</a>
+                        <ul class="subnav-content">
+                            <li><a href="/plantilla">PLANTILLA</a></li>
+                            <li><a href="/pabellon">PABELLÓN</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer-item"><a href="/entradas">ENTRADAS</a>
+                        <ul class="subnav-content">
+                            <li><a href="/partidos">PARTIDOS</a></li>
+                            <li><a href="/calendario">CALENDARIO</a></li>
+                            <li><a href="/compra">COMPRA</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer-item"><a href="">USUARIO</a>
+                        <ul class="subnav-content">
+                            <li><a href="/login">LOG IN</a></li>
+                            <li><a href="/register">REGISTRO</a></li>
+                            <li v-if="isLoggedin"><a href="/logout">CERRAR SESION</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </footer>
 
         </footer>
         </template>

@@ -45,13 +45,21 @@
                                 <div class="carousel-item active">
                                     <div class="background">
                                         <div class="foreground">
-                                            <div> <h2 class="text-white fs-4 fw-bold mb-0 w-100">Rayo Vallecano - FC Barcelona | 17/05 20:00h</h2></div>
+                                            <div> <h2 class="text-white fs-4 fw-bold mb-0 w-100">Rayo Vallecano - Real Madrid | 17/05 20:00h</h2></div>
                                             <a href="#" class="btn btn-danger float-end">LEER MÁS</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="background">
+                                    <div class="background2">
+                                        <div class="foreground">
+                                            <div> <h2 class="text-white fs-4 fw-bold mb-0 w-100">Rayo Vallecano - FC Barcelona | 24/05 19:30h</h2></div>
+                                            <a href="#" class="btn btn-danger float-end">LEER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="background3">
                                         <div class="foreground">
                                             <div> <h2 class="text-white fs-4 fw-bold mb-0 w-100">Rayo Vallecano - FC Barcelona | 17/05 20:00h</h2></div>
                                             <a href="#" class="btn btn-danger float-end">LEER MÁS</a>
@@ -59,15 +67,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="background">
-                                        <div class="foreground">
-                                            <div> <h2 class="text-white fs-4 fw-bold mb-0 w-100">Rayo Vallecano - FC Barcelona | 17/05 20:00h</h2></div>
-                                            <a href="#" class="btn btn-danger float-end">LEER MÁS</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="background">
+                                    <div class="background4">
                                         <div class="foreground">
                                             <div> <h2 class="text-white fs-4 fw-bold mb-0 w-100">Rayo Vallecano - FC Barcelona | 17/05 20:00h</h2></div>
                                             <a href="#" class="btn btn-danger float-end">LEER MÁS</a>
@@ -113,7 +113,7 @@
                         </div>
                     </div>
 
-                    <div class="child-div"><a href="/login" >
+                    <div class="child-div"><a href="#1" >
                         <div class="child-img">
                         <div class="date-time">
                             <p class="date">01/06/2023 10:30</p>
@@ -142,112 +142,291 @@
                 </div>
             </div>
         </section>
-        <section class="imagenes">
-            <div class="imagen">
-                <img src="" alt="">
-                <p>Texto de la imagen 1</p>
+
+            <div class="container-fluid" style="background-color: white; padding-top: 20px; margin-top: 20px;">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="imagen">
+                            <div class="image-container" style="width: 50%; height:25vh; background-color: red;">
+                                <div class="image" style="background-image: url('../../assets/img/noticia1.jpg');"></div>
+                            </div>
+                            <p>Texto de la imagen 1</p>
+                            <a class="leer-mas" href="/noticia1">Leer más</a>
+                        </div>
+                        <div class="imagen">
+                            <div class="image-container" style="width: 50%; height:25vh; background-color: red;">
+                                <div class="image" style="background-image: url('../../assets/img/noticia1.jpg');"></div>
+                            </div>
+                            <p>Texto de la imagen 1</p>
+                            <a class="leer-mas" href="/noticia1">Leer más</a>
+                        </div>
+                        <div class="imagen">
+                            <div class="image-container" style="width: 50%; height:25vh; background-color: red;">
+                                <div class="image" style="background-image: url('../../assets/img/noticia1.jpg');"></div>
+                            </div>
+                            <p>Texto de la imagen 1</p>
+                            <a class="leer-mas" href="/noticia1">Leer más</a>
+                        </div>
+                        <div class="imagen">
+                            <div class="image-container" style="width: 50%; height:25vh; background-color: red;">
+                                <div class="image" style="background-image: url('../../assets/img/noticia1.jpg');"></div>
+                            </div>
+                            <p>Texto de la imagen 1</p>
+                            <a class="leer-mas" href="/noticia1">Leer más</a>
+                        </div>
+                        <div class="imagen">
+                            <div class="image-container" style="width: 50%; height:25vh; background-color: red;">
+                                <div class="image" style="background-image: url('../../assets/img/noticia1.jpg');"></div>
+                            </div>
+                            <p>Texto de la imagen 1</p>
+                            <a class="leer-mas" href="/noticia1">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <section class="tabla">
+                            <h5 style="color: #ffffff; background: #000000; padding: 15px; margin-bottom: 3px;">CLASIFICACION</h5>
+                            <div class="tabla-responsive">
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th>Equipo</th>
+                                        <th>PJ</th>
+                                        <th>PG</th>
+                                        <th>PP</th>
+                                        <th>PF</th>
+                                        <th>PC</th>
+                                        <th>DIF</th>
+                                        <th>Pts</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Equipo 1</td>
+                                        <td>10</td>
+                                        <td>8</td>
+                                        <td>2</td>
+                                        <td>800</td>
+                                        <td>700</td>
+                                        <td>+100</td>
+                                        <td>18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Equipo 2</td>
+                                        <td>10</td>
+                                        <td>7</td>
+                                        <td>3</td>
+                                        <td>750</td>
+                                        <td>690</td>
+                                        <td>+60</td>
+                                        <td>17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Equipo 3</td>
+                                        <td>10</td>
+                                        <td>5</td>
+                                        <td>5</td>
+                                        <td>700</td>
+                                        <td>710</td>
+                                        <td>-10</td>
+                                        <td>15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Equipo 4</td>
+                                        <td>10</td>
+                                        <td>4</td>
+                                        <td>6</td>
+                                        <td>690</td>
+                                        <td>730</td>
+                                        <td>-40</td>
+                                        <td>14</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Equipo 1</td>
+                                        <td>10</td>
+                                        <td>8</td>
+                                        <td>2</td>
+                                        <td>800</td>
+                                        <td>700</td>
+                                        <td>+100</td>
+                                        <td>18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Equipo 2</td>
+                                        <td>10</td>
+                                        <td>7</td>
+                                        <td>3</td>
+                                        <td>750</td>
+                                        <td>690</td>
+                                        <td>+60</td>
+                                        <td>17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Equipo 3</td>
+                                        <td>10</td>
+                                        <td>5</td>
+                                        <td>5</td>
+                                        <td>700</td>
+                                        <td>710</td>
+                                        <td>-10</td>
+                                        <td>15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Equipo 4</td>
+                                        <td>10</td>
+                                        <td>4</td>
+                                        <td>6</td>
+                                        <td>690</td>
+                                        <td>730</td>
+                                        <td>-40</td>
+                                        <td>14</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Equipo 1</td>
+                                        <td>10</td>
+                                        <td>8</td>
+                                        <td>2</td>
+                                        <td>800</td>
+                                        <td>700</td>
+                                        <td>+100</td>
+                                        <td>18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Equipo 2</td>
+                                        <td>10</td>
+                                        <td>7</td>
+                                        <td>3</td>
+                                        <td>750</td>
+                                        <td>690</td>
+                                        <td>+60</td>
+                                        <td>17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Equipo 3</td>
+                                        <td>10</td>
+                                        <td>5</td>
+                                        <td>5</td>
+                                        <td>700</td>
+                                        <td>710</td>
+                                        <td>-10</td>
+                                        <td>15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Equipo 4</td>
+                                        <td>10</td>
+                                        <td>4</td>
+                                        <td>6</td>
+                                        <td>690</td>
+                                        <td>730</td>
+                                        <td>-40</td>
+                                        <td>14</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Equipo 1</td>
+                                        <td>10</td>
+                                        <td>8</td>
+                                        <td>2</td>
+                                        <td>800</td>
+                                        <td>700</td>
+                                        <td>+100</td>
+                                        <td>18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Equipo 2</td>
+                                        <td>10</td>
+                                        <td>7</td>
+                                        <td>3</td>
+                                        <td>750</td>
+                                        <td>690</td>
+                                        <td>+60</td>
+                                        <td>17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Equipo 3</td>
+                                        <td>10</td>
+                                        <td>5</td>
+                                        <td>5</td>
+                                        <td>700</td>
+                                        <td>710</td>
+                                        <td>-10</td>
+                                        <td>15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Equipo 4</td>
+                                        <td>10</td>
+                                        <td>4</td>
+                                        <td>6</td>
+                                        <td>690</td>
+                                        <td>730</td>
+                                        <td>-40</td>
+                                        <td>14</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <div class="menu-lateral">
+                            <h5 style="color: #ffffff; background: #000000; padding: 15px; margin-bottom: 3px;">PROXIMOS PARTIDOS</h5>
+                            <div class="proximos-eventos-baloncesto">
+                                <div class="evento">
+                                    <div class="cuadrado-rojo">20 Abr</div>
+                                    <div class="info-evento">
+                                        <div class="hora">20:30</div>
+                                        <div class="lugar">Palau Blaugrana</div>
+                                        <div class="tipo">Liga ACB</div>
+                                        <div class="jornada">Jornada 33</div>
+                                        <div class="equipos">Barcelona vs Baskonia</div>
+                                    </div>
+                                </div>
+                                <div class="evento">
+                                    <div class="cuadrado-negro">15 Abr</div>
+                                    <div class="info-evento">
+                                        <div class="hora">20:30</div>
+                                        <div class="lugar">Palau Blaugrana</div>
+                                        <div class="tipo">Liga ACB</div>
+                                        <div class="jornada">Jornada 33</div>
+                                        <div class="equipos">Barcelona vs Baskonia</div>
+                                    </div>
+                                </div>
+                                <div class="evento">
+                                    <div class="cuadrado-rojo">20 Abr</div>
+                                    <div class="info-evento">
+                                        <div class="hora">20:30</div>
+                                        <div class="lugar">Palau Blaugrana</div>
+                                        <div class="tipo">Liga ACB</div>
+                                        <div class="jornada">Jornada 33</div>
+                                        <div class="equipos">Barcelona vs Baskonia</div>
+                                    </div>
+                                </div>
+                                <div class="evento">
+                                    <div class="cuadrado-negro">20 Abr</div>
+                                    <div class="info-evento">
+                                        <div class="hora">20:30</div>
+                                        <div class="lugar">Palau Blaugrana</div>
+                                        <div class="tipo">Liga ACB</div>
+                                        <div class="jornada">Jornada 33</div>
+                                        <div class="equipos">Barcelona vs Baskonia</div>
+                                    </div>
+                                </div>
+                                <div class="evento">
+                                    <div class="cuadrado-rojo">20 Abr</div>
+                                    <div class="info-evento">
+                                        <div class="hora">20:30</div>
+                                        <div class="lugar">Palau Blaugrana</div>
+                                        <div class="tipo">Liga ACB</div>
+                                        <div class="jornada">Jornada 33</div>
+                                        <div class="equipos">Barcelona vs Baskonia</div>
+                                    </div>
+                                </div>
+                                <!-- Aquí irían más eventos -->
+                            </div>
+                    </div>
+                </div>
             </div>
-            <div class="imagen">
-                <img src="" alt="">
-                <p>Texto de la imagen 2</p>
-            </div>
-            <div class="imagen">
-                <img src="" alt="">
-                <p>Texto de la imagen 3</p>
-            </div>
-            <div class="imagen">
-                <img src="" alt="">
-                <p>Texto de la imagen 4</p>
-            </div>
+            <section class="imagenes">
+
         </section>
         </div>
 
-        <section class="tabla">
-            <h2>Tabla de resultados</h2>
-            <div class="tabla-responsive">
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Equipo</th>
-                        <th>PJ</th>
-                        <th>PG</th>
-                        <th>PP</th>
-                        <th>PF</th>
-                        <th>PC</th>
-                        <th>DIF</th>
-                        <th>Pts</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Equipo 1</td>
-                        <td>10</td>
-                        <td>8</td>
-                        <td>2</td>
-                        <td>800</td>
-                        <td>700</td>
-                        <td>+100</td>
-                        <td>18</td>
-                    </tr>
-                    <tr>
-                        <td>Equipo 2</td>
-                        <td>10</td>
-                        <td>7</td>
-                        <td>3</td>
-                        <td>750</td>
-                        <td>690</td>
-                        <td>+60</td>
-                        <td>17</td>
-                    </tr>
-                    <tr>
-                        <td>Equipo 3</td>
-                        <td>10</td>
-                        <td>5</td>
-                        <td>5</td>
-                        <td>700</td>
-                        <td>710</td>
-                        <td>-10</td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>Equipo 4</td>
-                        <td>10</td>
-                        <td>4</td>
-                        <td>6</td>
-                        <td>690</td>
-                        <td>730</td>
-                        <td>-40</td>
-                        <td>14</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-        <div class="menu-lateral">
-            <h2>Próximos Eventos de Baloncesto</h2>
-            <div class="proximos-eventos-baloncesto">
-                <div class="evento">
-                    <div class="cuadrado-rojo">13 Abr</div>
-                    <div class="info-evento">
-                        <div class="hora">19:00</div>
-                        <div class="lugar">Pabellón Deportivo</div>
-                        <div class="tipo">Liga ACB</div>
-                        <div class="jornada">Jornada 33</div>
-                        <div class="equipos">Real Madrid vs Valencia Basket</div>
-                    </div>
-                </div>
-                <div class="evento">
-                    <div class="cuadrado-negro">15 Abr</div>
-                    <div class="info-evento">
-                        <div class="hora">20:30</div>
-                        <div class="lugar">Palau Blaugrana</div>
-                        <div class="tipo">Liga ACB</div>
-                        <div class="jornada">Jornada 33</div>
-                        <div class="equipos">Barcelona vs Baskonia</div>
-                    </div>
-                </div>
-                <!-- Aquí irían más eventos -->
-            </div>
         </div>
 </template>
 

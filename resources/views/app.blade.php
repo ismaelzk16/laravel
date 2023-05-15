@@ -13,7 +13,6 @@
 </head>
 <body>
 
-
 @if (Auth::check())
     <script>
 
