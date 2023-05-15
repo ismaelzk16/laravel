@@ -7,37 +7,37 @@
                     <button class="btn btn-success" type="button" @click="this.$router.push('/addPartidos')">New Post</button>
                 </div>
             </div>
-            <table class="table table-hover table-sm">
+            <table class="table table-bordered table-hover">
                 <thead class="bg-dark text-light">
-                <tr>
-                    <th>#</th>
-                    <th>Goles Locales</th>
-                    <th>Goles Visitantes</th>
-                    <th>Jornada</th>
-                    <th>Situacion</th>
-                    <th>Fecha</th>
-                    <th>Equipo Local</th>
-                    <th>Equipo Visitante</th>
-                    <th>Ubicacion</th>
-                    <th>Opciones</th>
-                </tr>
+                    <tr>
+                        <th>#</th>
+                        <th>Goles Locales</th>
+                        <th>Goles Visitantes</th>
+                        <th>Jornada</th>
+                        <th>Situacion</th>
+                        <th>Fecha</th>
+                        <th>Equipo Local</th>
+                        <th>Equipo Visitante</th>
+                        <th>Ubicacion</th>
+                        <th>Opciones</th>
+                    </tr>
                 </thead>
                 <tbody>
-                <tr v-for="(partido, index) in partidos" :key="index">
-                    <td class="text-center">{{index}}</td>
-                    <td>{{partido.golesLocales}}</td>
-                    <td>{{partido.golesVisitantes}}</td>
-                    <td>{{partido.jornada}}</td>
-                    <td>{{partido.situacion}}</td>
-                    <td>{{partido.fecha}}</td>
-                    <td>{{partido.equipoLocal}}</td>
-                    <td>{{partido.equipoVisitante}}</td>
-                    <td>{{partido.ubicacion}}</td>
-                    <td class="text-center">
-                        <router-link :to="{ name: 'editPartidos', params: { id: partido.id } }" class="btn btn-warning">Edit</router-link>
-                        <button class="btn btn-danger" @click="deletePartido(partido.id)">Delete</button>
-                    </td>
-                </tr>
+                    <tr v-for="(partido, index) in partidos" :key="index">
+                        <td class="text-center">{{index}}</td>
+                        <td>{{partido.golesLocales}}</td>
+                        <td>{{partido.golesVisitantes}}</td>
+                        <td>{{partido.jornada}}</td>
+                        <td>{{partido.situacion}}</td>
+                        <td>{{partido.fecha}}</td>
+                        <td>{{partido.equipoLocal}}</td>
+                        <td>{{partido.equipoVisitante}}</td>
+                        <td>{{partido.ubicacion}}</td>
+                        <td class="text-center">
+                            <router-link :to="{ name: 'editPartidos', params: { id: partido.id } }" class="btn btn-warning">Edit</router-link>
+                            <button class="btn btn-danger" @click="deletePartido(partido.id)">Delete</button>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>

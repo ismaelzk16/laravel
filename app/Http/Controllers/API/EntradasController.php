@@ -11,6 +11,8 @@ class EntradasController extends Controller
 {
     public function save(Request $request)
     {
+        $success = true;
+        $message = "Entrada guardada con éxito";
         // Guardar entrada en la sesión
         $partido = Partidos::find($request->input('id_partido'));
         $entrada = [
@@ -48,7 +50,7 @@ class EntradasController extends Controller
         }
 
         // Limpiar la sesión de entradas
-        // session()->forget('entradas');
+        session()->forget('entradas');
 
         return redirect('/entradas')->with('success', 'Entradas compradas con éxito');
     }
@@ -64,11 +66,14 @@ class EntradasController extends Controller
 
         foreach ($entradas as $index => $entrada) {
             if ($entrada['id_partido'] === $id) {
-
+                unset($entradas[$index]); // Eliminar la entrada utilizando unset()
                 break;
             }
         }
+
+        session()->put('entradas', $entradas); // Actualizar la sesión con las entradas restantes
     }
+
 
 
 

@@ -4,30 +4,28 @@
             <div class="d-flex justify-content-between pb-2 mb-2">
                 <h5 class="card-title">Comprar entradas</h5>
             </div>
-            <table class="table table-hover table-sm">
+            <table class="table table-bordered table-hover table-striped">
                 <thead class="bg-dark text-light">
-                <tr>
-                    <th>#</th>
-                    <th>Jornada</th>
-                    <th>Fecha</th>
-                    <th>Equipo Local</th>
-                    <th>Equipo Visitante</th>
-                    <th>Ubicacion</th>
-                    <th>Opciones</th>
-                </tr>
+                    <tr>
+                        <th>Jornada</th>
+                        <th>Fecha</th>
+                        <th>Equipo Local</th>
+                        <th>Equipo Visitante</th>
+                        <th>Ubicacion</th>
+                        <th>Opciones</th>
+                    </tr>
                 </thead>
                 <tbody>
-                <tr v-for="(partido, index) in partidos.filter(p => p.situacion !== 'done')" :key="index">
-                    <td class="text-center">{{index}}</td>
-                    <td>{{partido.jornada}}</td>
-                    <td>{{partido.fecha}}</td>
-                    <td>{{partido.equipoLocal}}</td>
-                    <td>{{partido.equipoVisitante}}</td>
-                    <td>{{partido.ubicacion}}</td>
-                    <td class="text-center">
-                        <router-link :to="{ name: 'Entradas', params: { id: partido.id } }" class="btn btn-warning">Compra Entradas</router-link>
-                    </td>
-                </tr>
+                    <tr v-for="(partido, index) in partidos.filter(p => p.situacion !== 'done')" :key="index">
+                        <td>{{partido.jornada}}</td>
+                        <td>{{partido.fecha}}</td>
+                        <td>{{partido.equipoLocal}}</td>
+                        <td>{{partido.equipoVisitante}}</td>
+                        <td>{{partido.ubicacion}}</td>
+                        <td class="text-center">
+                            <router-link :to="{ name: 'Entradas', params: { id: partido.id } }" class="btn btn-primary">Compra Entradas</router-link>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>

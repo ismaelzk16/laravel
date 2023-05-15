@@ -7,30 +7,30 @@
                     <button class="btn btn-success" type="button" @click="this.$router.push('/partidos/add')">New Post</button>
                 </div>
             </div>
-            <table class="table table-hover table-sm">
+            <table class="table table-bordered table-hover">
                 <thead class="bg-dark text-light">
-                <tr>
-                    <th>#</th>
-                    <th>Nombre</th>
-                    <th>Email</th>
-                    <th>Password</th>
-                    <th>Télefono</th>
-                    <th>Opciones</th>
-<!--                    <th>Roles</th>-->
-                </tr>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Télefono</th>
+                        <th>Opciones</th>
+                        <!-- <th>Roles</th> -->
+                    </tr>
                 </thead>
                 <tbody>
-                <tr v-for="(user, index) in users" :key="index">
-                    <td class="text-center">{{index}}</td>
-                    <td>{{user.name}}</td>
-                    <td>{{user.email}}</td>
-                    <td>{{user.password}}</td>
-                    <td>{{user.phone}}</td>
-<!--                    <td>{{user.roles[0].nombre_rol}}</td>-->
-                    <td class="text-center">
-                        <router-link :to="{ name: 'editUsers', params: { id: user.id } }" class="btn btn-warning">Edit</router-link>
-                    </td>
-                </tr>
+                    <tr v-for="(user, index) in users" :key="index">
+                        <td class="text-center">{{index}}</td>
+                        <td>{{user.name}}</td>
+                        <td>{{user.email}}</td>
+                        <td>{{user.password}}</td>
+                        <td>{{user.phone}}</td>
+                        <!-- <td>{{user.roles[0].nombre_rol}}</td> -->
+                        <td class="text-center">
+                            <router-link :to="{ name: 'editUsers', params: { id: user.id } }" class="btn btn-warning">Edit</router-link>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -73,8 +73,8 @@ export default {
                 .delete(`api/users/${id}`)
                 .then((response) => {
                     console.log(response.data.success);
-                    // volver a cargar los datos de los ususarios
-                    this.getPartidos();
+                    // volver a cargar los datos de los usuarios
+                    this.getUsers();
                 })
                 .catch(function (error) {
                     console.log(error);
