@@ -14,8 +14,8 @@ import EditPartidos from '../components/EditPartidos.vue';
 import UsersPanel from '../components/UsersPanel.vue';
 import Entradas from '../components/Entradas.vue';
 import Carrito from '../components/Carrito.vue';
-// import AddUsers from '../components/AddUsers.vue';
-// import EditUsers from '../components/EditUsers.vue';
+import AddUsers from '../components/AddUsers.vue';
+import EditUsers from '../components/EditUsers.vue';
 
 export const routes = [
 
@@ -91,16 +91,16 @@ export const routes = [
       path: '/carrito',
       component: Carrito,
     },
-    // {
-    //     name: 'addUsers',
-    //     path: '/addUsers',
-    //     component: AddUsers,
-    // },
-    // {
-    //     name: 'editUsers',
-    //     path: '/users/:id/edit',
-    //     component: EditUsers,
-    // }
+    {
+        name: 'addUsers',
+        path: '/addUsers',
+        component: AddUsers,
+    },
+    {
+        name: 'editUsers',
+        path: '/users/:id/edit',
+        component: EditUsers,
+    }
 ];
 
 const router = createRouter({

@@ -11,10 +11,7 @@
                 <thead class="bg-dark text-light">
                 <tr>
                     <th>#</th>
-                    <th>Goles Locales</th>
-                    <th>Goles Visitantes</th>
                     <th>Jornada</th>
-                    <th>Situacion</th>
                     <th>Fecha</th>
                     <th>Equipo Local</th>
                     <th>Equipo Visitante</th>
@@ -23,12 +20,9 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr v-for="(partido, index) in partidos" :key="index">
+                <tr v-for="(partido, index) in partidos.filter(p => p.situacion !== 'done')" :key="index">
                     <td class="text-center">{{index}}</td>
-                    <td>{{partido.golesLocales}}</td>
-                    <td>{{partido.golesVisitantes}}</td>
                     <td>{{partido.jornada}}</td>
-                    <td>{{partido.situacion}}</td>
                     <td>{{partido.fecha}}</td>
                     <td>{{partido.equipoLocal}}</td>
                     <td>{{partido.equipoVisitante}}</td>

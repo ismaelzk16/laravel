@@ -13,6 +13,13 @@
 </head>
 <body>
 
+<!-- @auth
+    @if(in_array(1, Auth::user()->roles->pluck('id')->toArray()) || in_array(2, Auth::user()->roles->pluck('id')->toArray()))
+        <a href="{{ url('/partidos') }}">Partidos</a>
+    @endif
+@endauth -->
+
+
 @if (Auth::check())
     <script>
 
@@ -34,7 +41,6 @@
 
 
 <script>
-    console.log( window.Laravel.user);
 </script>
 <div id="app"></div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Session;
 class UserController extends Controller
 {
     public function login(Request $request){
+        $success = null;
+        $message = "Se ha registrado el usuario";
         $credentials=[
             'email' => $request->email,
             'password' => $request->password
@@ -41,6 +43,8 @@ class UserController extends Controller
     }
 
     public function register(Request $request){
+        $success = null;
+        $message = "Se ha registrado el usuario";
         try{
         $user = new Users();
         $user->name = $request->name;
@@ -97,12 +101,5 @@ class UserController extends Controller
 
         return response()->json(['success'=> 'User actualizado correctamente']);
     }
-
-    /*
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-    //*/
 }
 ?>

@@ -23,7 +23,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr v-for="(partido, index) in partidos.filter(p => p.situacion !== 'done')" :key="index">
+                <tr v-for="(partido, index) in partidos" :key="index">
                     <td class="text-center">{{index}}</td>
                     <td>{{partido.golesLocales}}</td>
                     <td>{{partido.golesVisitantes}}</td>

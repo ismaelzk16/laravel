@@ -29,7 +29,6 @@
 <!--                    <td>{{user.roles[0].nombre_rol}}</td>-->
                     <td class="text-center">
                         <router-link :to="{ name: 'editUsers', params: { id: user.id } }" class="btn btn-warning">Edit</router-link>
-                        <button class="btn btn-danger" @click="deleteUser(user.id)">Delete</button>
                     </td>
                 </tr>
                 </tbody>
