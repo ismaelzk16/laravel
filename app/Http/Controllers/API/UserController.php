@@ -12,8 +12,7 @@ use Illuminate\Support\Facades\Session;
 class UserController extends Controller
 {
     public function login(Request $request){
-        $success = null;
-        $message = "Se ha registrado el usuario";
+
         $credentials=[
             'email' => $request->email,
             'password' => $request->password
@@ -43,7 +42,7 @@ class UserController extends Controller
     }
 
     public function register(Request $request){
-        $success = null;
+        $success = "";
         $message = "Se ha registrado el usuario";
         try{
         $user = new Users();
@@ -65,6 +64,8 @@ class UserController extends Controller
 }
 
     public function logout(Request $request){
+        $success= true;
+        $message= "Se ha cerrado sessión";
         try{
             Session::flush();
         }catch(\Illuminate\Database\QueryException $ex){
@@ -76,6 +77,7 @@ class UserController extends Controller
             'success' => $success,
             'message' => $message,
         ];
+        return response()->json(['success'=> 'User actualizado correctamente']);
     }
 
     public function edit($id)

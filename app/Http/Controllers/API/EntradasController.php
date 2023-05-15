@@ -60,15 +60,14 @@ class EntradasController extends Controller
 
     public function delete($id)
     {
-        $partido = Partidos::find($id);
+        $entradas = session()->get('entradas', []);
 
-        if (!$partido) {
-            return response()->json(['message' => 'Partido no encontrado'], 404);
+        foreach ($entradas as $index => $entrada) {
+            if ($entrada['id_partido'] === $id) {
+
+                break;
+            }
         }
-
-        $partido->delete();
-
-        return response()->json(['message' => 'Partido eliminado con éxito'], 200);
     }
 
 

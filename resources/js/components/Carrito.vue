@@ -1,6 +1,6 @@
 <template>
     <div class="ticket-sales">
-        <h2>Carrito de Entradas</h2>
+        <h2 class="carrito-title">Carrito de Entradas</h2>
         <div v-if="entradas.length === 0" class="empty-cart">
             <p>No hay entradas en el carrito</p>
         </div>
@@ -13,7 +13,7 @@
                 <p>ID de partido: {{ entrada.id_partido }}</p>
                 <button @click="borrarEntrada(index)" class="btn btn-danger">Borrar entrada</button>
             </div>
-            <button @click="realizarCompra" class="btn btn-dark">Realizar Compra</button>
+            <button @click="realizarCompra" class="btn btn-primary">Realizar Compra</button>
             <p v-if="mostrarMensaje" class="success-message">Compra realizada con éxito</p>
         </div>
     </div>

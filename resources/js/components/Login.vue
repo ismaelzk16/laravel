@@ -77,7 +77,7 @@ export default {
                         .then(response => {
                             if (response.data.success) {
                                 console.error('OK');
-                                // window.location.href = "/login"
+                                window.location.href = "/login"
                             } else {
                                 console.error('No loggin');
                                 this.error = response.data.message
