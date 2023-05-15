@@ -12,13 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('entradas', function (Blueprint $table) {
-            $table->id('id_entrada');
+            $table->id();
             $table->unsignedBigInteger('id_user');
             $table->unsignedBigInteger('id_partido');
             $table->date('fecha');
             $table->string('seccion');
-            $table->string('fila_y_numero');
+            $table->string('fila');
+            $table->string('numero');
             $table->string('precio');
+            $table->timestamps();
             $table->foreign("id_user")
                 ->references("id")
                 ->on("users")

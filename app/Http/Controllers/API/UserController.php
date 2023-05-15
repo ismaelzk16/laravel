@@ -35,7 +35,10 @@ class UserController extends Controller
 
     }
 
-
+    public function show(Request $request){
+        $user = Users::all()->toArray();
+        return $user;
+    }
 
     public function register(Request $request){
         try{
@@ -71,10 +74,35 @@ class UserController extends Controller
         ];
     }
 
+    public function edit($id)
+    {
+        $post = Partidos::find($id);
+        return response()->json($post);
+    }
+
+
+
+    public function update($id, Request $request)
+    {
+        $user = Users::find($id);
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required',
+            'password' => 'required',
+            'phone' => 'required',
+        ]);
+        $input = $request->all();
+        $input['password'] = Hash::make($request->password);
+        $user->update($input);
+
+        return response()->json(['success'=> 'User actualizado correctamente']);
+    }
+
+    /*
     public function __construct()
     {
         $this->middleware('auth');
     }
-    //
+    //*/
 }
 ?>

@@ -50,8 +50,6 @@ class PartidoController extends Controller
         return response()->json($post);
     }
 
-
-
     public function update($id, Request $request)
     {
         $partido = Partidos::find($id);

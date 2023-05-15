@@ -20,6 +20,5 @@ class Partidos extends Model
     ];
 
     protected $hidden = [
-        'id_partidos',
     ];
 }
