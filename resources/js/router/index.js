@@ -16,7 +16,12 @@ import Entradas from '../components/Entradas.vue';
 import Carrito from '../components/Carrito.vue';
 import AddUsers from '../components/AddUsers.vue';
 import EditUsers from '../components/EditUsers.vue';
-
+import Noticia2 from '../components/noticia1.vue';
+import Noticia2 from '../components/noticia2.vue';
+import Noticia2 from '../components/noticia3.vue';
+import Noticia2 from '../components/noticia4.vue';
+import Club1 from '../components/Club.vue';
+import Club2 from '../components/Club2.vue';
 export const routes = [
 
     {
@@ -100,6 +105,36 @@ export const routes = [
         name: 'editUsers',
         path: '/users/:id/edit',
         component: EditUsers,
+    },
+    {
+      name: 'noticia1',
+      path: '/noticia1',
+      component: Noticia1,
+    },
+    {
+      name: 'noticia2',
+      path: '/noticia2',
+      component: Noticia2,
+    },
+    {
+      name: 'noticia3',
+      path: '/noticia3',
+      component: Noticia3,
+    },
+    {
+      name: 'noticia4',
+      path: '/noticia4',
+      component: Noticia4,
+    },
+    {
+      name: 'club1',
+      path: '/club1',
+      component: Club1
+    },
+    {
+      name: 'club2',
+      path: '/club2',
+      component: Club2
     }
 ];
 
