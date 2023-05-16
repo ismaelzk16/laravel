@@ -20,6 +20,7 @@ use App\Http\Controllers\API\EntradasController;
 */
 
 Route::post('login', [UserController::class, 'login']);
+Route::post('plantilla', [UserController::class, 'plantilla']);
 Route::post('register', [UserController::class, 'register']);
 Route::post('logout', [UserController::class, 'logout'])->middleware(middleware:'auth:sanctum');
 Route::get('users', [UserController::class, 'show']);

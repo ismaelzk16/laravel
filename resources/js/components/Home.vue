@@ -148,38 +148,31 @@
                     <div class="col-md-8">
                         <div class="imagen">
                             <div class="image-container" style="width: 50%; height:25vh; background-color: red;">
-                                <div class="image" style="background-image: url('../../assets/img/noticia1.jpg');"></div>
+                                <div class="image"></div>
                             </div>
-                            <p>Texto de la imagen 1</p>
+                            <p>Rayo Vallecano - Real Madrid | 17/05 20:00h</p>
                             <a class="leer-mas" href="/noticia1">Leer más</a>
                         </div>
                         <div class="imagen">
                             <div class="image-container" style="width: 50%; height:25vh; background-color: red;">
-                                <div class="image" style="background-image: url('../../assets/img/noticia1.jpg');"></div>
+                                <div class="image1"></div>
                             </div>
                             <p>Texto de la imagen 1</p>
-                            <a class="leer-mas" href="/noticia1">Leer más</a>
+                            <a class="leer-mas" href="/noticia2">Leer más</a>
                         </div>
                         <div class="imagen">
                             <div class="image-container" style="width: 50%; height:25vh; background-color: red;">
-                                <div class="image" style="background-image: url('../../assets/img/noticia1.jpg');"></div>
+                                <div class="image2"></div>
                             </div>
                             <p>Texto de la imagen 1</p>
-                            <a class="leer-mas" href="/noticia1">Leer más</a>
+                            <a class="leer-mas" href="/noticia3">Leer más</a>
                         </div>
                         <div class="imagen">
                             <div class="image-container" style="width: 50%; height:25vh; background-color: red;">
-                                <div class="image" style="background-image: url('../../assets/img/noticia1.jpg');"></div>
+                                <div class="image3"></div>
                             </div>
                             <p>Texto de la imagen 1</p>
-                            <a class="leer-mas" href="/noticia1">Leer más</a>
-                        </div>
-                        <div class="imagen">
-                            <div class="image-container" style="width: 50%; height:25vh; background-color: red;">
-                                <div class="image" style="background-image: url('../../assets/img/noticia1.jpg');"></div>
-                            </div>
-                            <p>Texto de la imagen 1</p>
-                            <a class="leer-mas" href="/noticia1">Leer más</a>
+                            <a class="leer-mas" href="/noticia4">Leer más</a>
                         </div>
                     </div>
                     <div class="col-md-4">

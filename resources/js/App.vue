@@ -23,11 +23,6 @@
                     </div>
                 </div>
                 <div class="subnav">
-                    <button class="subnavbtn">NOTICIAS</button>
-                    <div class="subnav-content">
-                    </div>
-                </div>
-                <div class="subnav">
                     <button class="subnavbtn">EQUIPO</button>
                     <div class="subnav-content">
                         <a href="/plantilla">PLANTILLA</a>

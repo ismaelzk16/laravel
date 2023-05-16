@@ -700,3 +700,142 @@ body{
     color: green;
     font-weight: bold;
 }
+
+
+.imagen {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.imagen p {
+    margin: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.leer-mas {
+    margin-top: 100px;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+
+.card {
+    border: 1px solid #ddd;
+}
+
+.card-header {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-header h5 {
+    margin-bottom: 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    color: #fff;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.text-muted a {
+    color: #6c757d;
+}
+
+.text-muted a:hover {
+    color: #6c757d;
+    text-decoration: underline;
+}
+
+.alert {
+    margin-bottom: 20px;
+}
+
+.alert button {
+    position: relative;
+    top: -2px;
+}
+
+@media (max-width: 576px) {
+    .form-group.row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .form-group.row [class^="col-"] {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .form-group.row + .form-group.row {
+        margin-top: 20px;
+    }
+
+    .form-group.row .col-md-8 {
+        margin-top: 10px;
+    }
+}
+
+.player-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.player-image {
+    width: 150px;
+    height: 150px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+}
+
+.player-name {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.player-position {
+    margin-top: 5px;
+    color: #666;
+}
