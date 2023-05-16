@@ -1,38 +1,41 @@
 <template>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <h3>Sección</h3>
-          <div class="form-group">
-            <label>Selecciona una sección:</label>
-            <select class="form-control" v-model="selectedSeccion">
-              <option v-for="seccion in secciones" :value="seccion">{{seccion}}</option>
-            </select>
-          </div>
+  <div class="container" style="background-color: white; padding: 20px;">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Sección</h3>
+        <div class="form-group">
+          <label>Selecciona una sección:</label>
+          <select class="form-control" v-model="selectedSeccion">
+            <option v-for="seccion in secciones" :value="seccion">{{seccion}}</option>
+          </select>
         </div>
-        <div class="col-sm-4">
-          <h3>Fila y Número</h3>
-          <div class="form-group">
-            <label>Selecciona una fila:</label>
-            <select class="form-control" v-model="selectedFila" @change="calcularPrecio()">
-              <option v-for="fila in filas" :value="fila">{{fila}}</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Selecciona un número:</label>
-            <select class="form-control" v-model="selectedNumero">
-              <option v-for="numero in numeros" :value="numero">{{numero}}</option>
-            </select>
-          </div>
+      </div>
+      <div class="col-sm-4">
+        <h3>Fila y Número</h3>
+        <div class="form-group">
+          <label>Selecciona una fila:</label>
+          <select class="form-control" v-model="selectedFila" @change="calcularPrecio()">
+            <option v-for="fila in filas" :value="fila">{{fila}}</option>
+          </select>
         </div>
-        <div class="col-sm-4">
-          <h3>Precio</h3>
-          <p>{{precio}}€</p>
+        <div class="form-group">
+          <label>Selecciona un número:</label>
+          <select class="form-control" v-model="selectedNumero">
+            <option v-for="numero in numeros" :value="numero">{{numero}}</option>
+          </select>
         </div>
-        <button class="btn btn-primary" @click="guardarInformacion()">Guardar</button>
+      </div>
+      <div class="col-sm-4">
+        <h3>Precio</h3>
+        <p>{{precio}}€</p>
+      </div>
+      <div class="col-sm-12 text-center mt-3">
+        <button class="btn btn-primary btn-sm" style="width: 150px;" @click="guardarInformacion()">Guardar</button>
       </div>
     </div>
-  </template>
+  </div>
+</template>
+
   
   <script>
   import axios from 'axios';
