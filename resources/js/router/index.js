@@ -16,10 +16,10 @@ import Entradas from '../components/Entradas.vue';
 import Carrito from '../components/Carrito.vue';
 import AddUsers from '../components/AddUsers.vue';
 import EditUsers from '../components/EditUsers.vue';
-import Noticia2 from '../components/noticia1.vue';
+import Noticia1 from '../components/noticia1.vue';
 import Noticia2 from '../components/noticia2.vue';
-import Noticia2 from '../components/noticia3.vue';
-import Noticia2 from '../components/noticia4.vue';
+import Noticia3 from '../components/noticia3.vue';
+import Noticia4 from '../components/noticia4.vue';
 import Club1 from '../components/Club.vue';
 import Club2 from '../components/Club2.vue';
 export const routes = [

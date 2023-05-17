@@ -18,7 +18,7 @@
 <!--                    <router-link to="/" class="subnavbtn" :class="{ activenav: currentPage === '/' }">Home</router-link>-->
 <!--                </div>-->
                 <div class="subnav">
-                    <button class="subnavbtn">HOME</button>
+                    <button class="subnavbtn"><a href="/">HOME</a></button>
                     <div class="subnav-content">
                     </div>
                 </div>
@@ -26,6 +26,8 @@
                     <button class="subnavbtn">EQUIPO</button>
                     <div class="subnav-content">
                         <a href="/plantilla">PLANTILLA</a>
+                        <a href="/club1">HISTORIA DEL CLUB</a>
+                        <a href="/club2">ACTUALIDAD DEL CLUB</a>
                         <a href="/pabellon">PABELLÓN</a>
                     </div>
                 </div>
@@ -33,7 +35,6 @@
                     <button class="subnavbtn">ENTRADAS</button>
                     <div class="subnav-content">
                         <a href="/partidos">PARTIDOS</a>
-                        <a href="/calendario">CALENDARIO</a>
                         <a href="/partidosCompra">COMPRA</a>
                         <a href="/carrito">CARRITO</a>
                     </div>
