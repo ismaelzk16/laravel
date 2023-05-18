@@ -165,14 +165,14 @@
                                 <div class="image2"></div>
                             </div>
                             <p>Valencia Basket - Rayo Vallecano</p>
-                            <a class="leer-mas" href="/noticia3">Leer más</a>
+                            <a class="leer-mas" href="/noticia4">Leer más</a>
                         </div>
                         <div class="imagen">
                             <div class="image-container3">
                                 <div class="image3"></div>
                             </div>
                             <p>FC Barcelona - Rayo Vallecano Baloncesto</p>
-                            <a class="leer-mas" href="/noticia4">Leer más</a>
+                            <a class="leer-mas" href="/noticia5">Leer más</a>
                         </div>
                     </div>
                     <div class="col-md-4">
