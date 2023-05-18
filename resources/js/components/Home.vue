@@ -70,7 +70,7 @@
                                     <div class="background4">
                                         <div class="foreground">
                                             <div> <h2 class="text-white fs-4 fw-bold mb-0 w-100">Rayo Vallecano - Coosur Real Betis | 11/06 18:00h</h2></div>
-                                            <a href="#" class="btn btn-danger float-end">VER PREVIA</a>
+                                            <a href="/noticia2" class="btn btn-danger float-end">VER PREVIA</a>
                                         </div>
                                     </div>
                                 </div>

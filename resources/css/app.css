@@ -1165,3 +1165,37 @@ tr{
     max-height: 100px;
     height: auto;
 }
+
+.team-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.team-logo {
+    max-width: 50px;
+}
+
+.vs-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.match-details {
+    margin-bottom: 20px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.detail-label {
+    font-weight: bold;
+}
+
+.detail-value {
+    margin-left: 10px;
+}
