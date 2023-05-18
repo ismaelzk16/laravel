@@ -34,7 +34,7 @@
                 <div class="subnav">
                     <button class="subnavbtn">ENTRADAS</button>
                     <div class="subnav-content">
-                        <a href="/partidos">PARTIDOS</a>
+                        <a href="/partidos" v-if="isLoggedin">PARTIDOS</a>
                         <a href="/partidosCompra">COMPRA</a>
                         <a href="/carrito">CARRITO</a>
                     </div>
