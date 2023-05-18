@@ -1,7 +1,7 @@
 <template>
     <div class="noticiasVarias">
       <img src="../../assets/img/noticia4.webp" alt="Imagen del Rayo Vallecano">
-      <h2>Historia resumida del Rayo</h2>
+      <h2>Valencia Basket - Rayo Vallecano Baloncesto</h2>
       <hr>
       <p><strong>1924</strong></p>
       <p>

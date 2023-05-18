@@ -20,6 +20,8 @@ import Noticia1 from '../components/noticia1.vue';
 import Noticia2 from '../components/noticia2.vue';
 import Noticia3 from '../components/noticia3.vue';
 import Noticia4 from '../components/noticia4.vue';
+import Noticia5 from '../components/noticia5.vue';
+import Noticia6 from '../components/noticia6.vue';
 import Club1 from '../components/Club.vue';
 import Club2 from '../components/Club2.vue';
 import Plantilla from '../components/plantilla.vue';
@@ -127,6 +129,16 @@ export const routes = [
       name: 'noticia4',
       path: '/noticia4',
       component: Noticia4,
+    },,
+    {
+      name: 'noticia5',
+      path: '/noticia5',
+      component: Noticia5,
+    },
+    {
+      name: 'noticia6',
+      path: '/noticia6',
+      component: Noticia6,
     },
     {
       name: 'club1',

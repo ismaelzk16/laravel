@@ -1,5 +1,6 @@
     <template>
-        <div class="container">
+        <div class="noticiasVarias">
+            <img src="../../assets/img/bandera.jpg" alt="Imagen del Rayo Vallecano">
             <h2>Historia resumida del Rayo</h2>
             <hr>
             <div class="year">1924-2000</div>

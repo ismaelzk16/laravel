@@ -253,7 +253,7 @@ a{
 }
 
 .noticiasVarias {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
@@ -262,7 +262,7 @@ a{
   }
 
   .noticiasVarias img {
-    width: 600px;
+    width: 100%;
     margin-bottom: 20px;
   }
 
@@ -377,16 +377,41 @@ a{
 }
 
 
-.child-div img, .child-img {
+.child-div img, .child-img, .child-img1, .child-img2, .child-img3{
     width: 100%;
-    height: 50%;
-    background-image: url("../assets/img/noticia2.jpg");
+    height: 40%;
     background-size: cover;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: left;
 }
+
+.child-img{
+    background-image: url('../assets/img/noticia1.jpg')
+}
+
+.child-img1{
+    background-image: url('../assets/img/noticia7.jpg')
+
+}
+
+.child-img2{
+    background-image: url('../assets/img/noticia8.jpg')
+
+}
+
+.child-img3{
+    background-image: url('../assets/img/noticia9.jpg');
+    background-size: 120%;
+    background-position:80% 90%;
+
+}
+
+
 
 .date-time {
     position: relative;
-    top: 20vh;
+    top: 24vh;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -525,12 +550,49 @@ a{
     margin-bottom: 20px;
 }
 
-.imagen img {
-    width: 40%;
+.imagen img{
+    width: 70%;
     height: auto;
     object-fit: cover;
     margin-right: 0;
 }
+
+.image-container, .image-container1, .image-container2, .image-container3 {
+    min-width: 300px;
+    height:25vh;
+}
+
+.image-container{
+    background-image: url("../assets/img/noticia4.webp");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.image-container1{
+    background-image: url("../assets/img/noticia6.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.image-container2{
+    background-image: url("../assets/img/noticia5.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.image-container3{
+    background-image: url("../assets/img/noticia3.webp");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 .tabla {
     width: 100%;
@@ -768,12 +830,18 @@ tr{
 }
 
 .leer-mas {
+    width: 100px;
     margin-top: 100px;
     display: inline-block;
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
     text-decoration: none;
+    background: #020202;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 13px 13px 14px 15px;
+    font-size: 11px;
+    margin-right: 15px;
+    position: absolute;
+    right: 40%;
 }
 
 
@@ -896,7 +964,6 @@ tr{
 
 .container {
     font-family: Arial, sans-serif;
-    margin: 20px;
     padding: 20px;
     background-color: #f7f7f7;
     border-radius: 4px;

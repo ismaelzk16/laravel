@@ -1,7 +1,6 @@
-<div class="container">
-</div>
 <template>
-    <div class="container">
+    <div class="noticiasVarias">
+        <img src="../../assets/img/bandera.jpg" alt="Imagen del Rayo Vallecano">
         <h2>Actualidad del Rayo</h2>
         <hr>
         <div class="year">2000-2021</div>

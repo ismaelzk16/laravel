@@ -46,7 +46,7 @@
                                     <div class="background">
                                         <div class="foreground">
                                             <div> <h2 class="text-white fs-4 fw-bold mb-0 w-100">FC Barcelona - Rayo Vallecano Baloncesto | 17/05 20:00h</h2></div>
-                                            <a href="#" class="btn btn-danger float-end">VER PREVIA</a>
+                                            <a href="/noticia5" class="btn btn-danger float-end">VER PREVIA</a>
                                         </div>
                                     </div>
                                 </div>
@@ -54,7 +54,7 @@
                                     <div class="background2">
                                         <div class="foreground">
                                             <div> <h2 class="text-white fs-4 fw-bold mb-0 w-100">Rayo Vallecano Baloncesto - Real Madrid Basket | 24/05 19:30h</h2></div>
-                                            <a href="#" class="btn btn-danger float-end">VER PREVIA</a>
+                                            <a href="/noticia6" class="btn btn-danger float-end">VER PREVIA</a>
                                         </div>
                                     </div>
                                 </div>
@@ -62,7 +62,7 @@
                                     <div class="background3">
                                         <div class="foreground">
                                             <div> <h2 class="text-white fs-4 fw-bold mb-0 w-100">Valencia Basket - Rayo Vallecano Baloncesto | 01/06 12:00h</h2></div>
-                                            <a href="#" class="btn btn-danger float-end">VER PREVIA</a>
+                                            <a href="/noticia4" class="btn btn-danger float-end">VER PREVIA</a>
                                         </div>
                                     </div>
                                 </div>
@@ -88,36 +88,36 @@
                 </div>
                 <div class="black-div">
 
-                    <div class="child-div">
+                    <div class="child-div"><a href="/noticia1" >
                         <div class="child-img">
-                        <div class="date-time">
-                            <p class="date">01/06/2023 10:30</p>
-                            <p class="title">Título de la imagen</p>
-                        </div>
-                        </div>
+                            <div class="date-time">
+                                <p class="date">14/05/2023 10:32</p>
+                                <p class="title">Rueda de prensa <br></p>
+                            </div>
+                        </div></a>
                     </div>
-                    <div class="child-div">
-                        <div class="child-img">
-                        <div class="date-time">
-                            <p class="date">01/06/2023 10:30</p>
-                            <p class="title">Título de la imagen</p>
-                        </div>
-                        </div>
+                    <div class="child-div"><a href="/noticia2" >
+                        <div class="child-img1">
+                            <div class="date-time">
+                                <p class="date">12/04/2023 18:23</p>
+                                <p class="title">Partidazo en el Pabellón de las Estrellas</p>
+                            </div>
+                        </div></a>
                     </div>
-                    <div class="child-div">
-                        <div class="child-img">
-                        <div class="date-time">
-                            <p class="date">01/06/2023 10:30</p>
-                            <p class="title">Título de la imagen</p>
-                        </div>
-                        </div>
+                    <div class="child-div"><a href="/noticia3" >
+                        <div class="child-img2">
+                            <div class="date-time">
+                                <p class="date">01/05/2023 22:12</p>
+                                <p class="title">Rayo Vallecano Baloncesto 64 - 65 Obradorio CAB</p>
+                            </div>
+                        </div></a>
                     </div>
 
-                    <div class="child-div"><a href="#1" >
-                        <div class="child-img">
+                    <div class="child-div"><a href="/plantilla" >
+                        <div class="child-img3">
                         <div class="date-time">
-                            <p class="date">01/06/2023 10:30</p>
-                            <p class="title">Título de la imagen</p>
+                            <p class="date">10/08/2022 11:45</p>
+                            <p class="title">Plantilla para temporada 2022-2023</p>
                         </div>
                         </div></a>
                     </div>
@@ -147,33 +147,31 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="imagen">
-                            <div class="image-container" style="width: 50%; height:25vh; background-color: red;">
+                            <div class="image-container">
                                 <div class="image"></div>
                             </div>
-                            <p>Rayo Vallecano - Real Madrid | 17/05 20:00h
-
-                            </p>
-                            <a class="leer-mas" href="/noticia1">Leer más</a>
+                            <p>Rayo Vallecano - Real Madrid</p>
+                            <a class="leer-mas" href="/noticia6">Leer más</a>
                         </div>
                         <div class="imagen">
-                            <div class="image-container" style="width: 50%; height:25vh; background-color: red;">
+                            <div class="image-container1">
                                 <div class="image1"></div>
                             </div>
-                            <p>Texto de la imagen 1</p>
+                            <p>Rayo Vallecano - Coosur Real Betis</p>
                             <a class="leer-mas" href="/noticia2">Leer más</a>
                         </div>
                         <div class="imagen">
-                            <div class="image-container" style="width: 50%; height:25vh; background-color: red;">
+                            <div class="image-container2">
                                 <div class="image2"></div>
                             </div>
-                            <p>Texto de la imagen 1</p>
+                            <p>Valencia Basket - Rayo Vallecano</p>
                             <a class="leer-mas" href="/noticia3">Leer más</a>
                         </div>
                         <div class="imagen">
-                            <div class="image-container" style="width: 50%; height:25vh; background-color: red;">
+                            <div class="image-container3">
                                 <div class="image3"></div>
                             </div>
-                            <p>Texto de la imagen 1</p>
+                            <p>FC Barcelona - Rayo Vallecano Baloncesto</p>
                             <a class="leer-mas" href="/noticia4">Leer más</a>
                         </div>
                     </div>
