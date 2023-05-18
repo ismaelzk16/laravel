@@ -96,12 +96,19 @@ class UserController extends Controller
             'email' => 'required',
             'password' => 'required',
             'phone' => 'required',
+            'role_id' => 'required|exists:roles,id',
         ]);
+
         $input = $request->all();
         $input['password'] = Hash::make($request->password);
+
+        // Actualizar los campos del usuario
         $user->update($input);
 
-        return response()->json(['success'=> 'User actualizado correctamente']);
+        // Actualizar el rol asociado
+        $user->roles()->sync([$request->input('role_id')]);
+
+        return response()->json(['success' => 'Usuario actualizado correctamente']);
     }
 }
 ?>
