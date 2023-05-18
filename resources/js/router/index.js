@@ -22,6 +22,8 @@ import Noticia3 from '../components/noticia3.vue';
 import Noticia4 from '../components/noticia4.vue';
 import Club1 from '../components/Club.vue';
 import Club2 from '../components/Club2.vue';
+import Plantilla from '../components/plantilla.vue';
+import Pabellon from '../components/pabellon.vue';
 export const routes = [
 
     {
@@ -135,6 +137,16 @@ export const routes = [
       name: 'club2',
       path: '/club2',
       component: Club2
+    },
+    {
+      name: 'plantilla',
+      path: '/plantilla',
+      component: Plantilla
+    },
+    {
+      name: 'pabellon',
+      path: '/pabellon',
+      component: Pabellon
     }
 ];
 

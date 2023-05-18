@@ -12,7 +12,7 @@
                 La Copa de la UEFA marca la primera temporada del siglo XXI como la más brillante en la historia del Club.<br>
                 La participación en la Copa de la UEFA es un gran éxito social y deportivo, porque se alcanzan los cuartos de final después de eliminar sucesivamente al Constelación de Andorra, Molde de Noruega, Viborg de Dinamarca, Lokomotiv de Moscú y Girondins de Burdeos.<br>
                 El equipo es eliminado en cuartos de final por el Alavés, después de perder 3-0 en la ida y ganar a los vitorianos 2-1 en la vuelta en Vallecas.<br>
-                La Liga se acaba en 14ª posición con 43 puntos, 56 goles a favor y 68 en contra.
+                La Liga se acaba en 14ª posición con 43 puntos.
             </p>
         </div>
 
@@ -20,7 +20,7 @@
             <h3>Temporada 2001-2002</h3>
             <p>
                 Undécima temporada en Primera División. Dirige el equipo Andoni Goicoechea, al que sustituye durante la temporada Gregorio Manzano, que salva al equipo de lo que parecía un descenso seguro a Segunda División.<br>
-                Se termina la competición en 11º puesto con 49 puntos y 46 goles a favor y 52 en contra.
+                Se termina la competición en 11º puesto con 49 punntos.
             </p>
         </div>
 
@@ -28,7 +28,7 @@
             <h3>Temporada 2002-2003</h3>
             <p>
                 Duodécima temporada en Primera División y quinta consecutiva. Dirigen el equipo sucesivamente Fernando Vázquez, Gustavo Benítez y Antonio Iriondo, que no pueden salvarle del descenso a Segunda División.<br>
-                La Liga se acaba en el último lugar, con 32 puntos, 31 goles a favor y 62 en contra.
+                La Liga se acaba en el último lugar, con 32 puntos.
             </p>
         </div>
 
@@ -36,7 +36,7 @@
             <h3>Temporada 2003-2004</h3>
             <p>
                 Desastrosa temporada en la que dirigen al equipo Julen Lopetegui, Jorge D'alessandro y Chechu Rojo y en la que se consuma el descenso a la Segunda B.<br>
-                El equipo, con jugadores de renombre y planificado para el ascenso, cae en dos años de la Primera División a la Segunda B. Acaba la Liga en el puesto 21º, con 43 puntos y 45 goles a favor y 63 en contra.
+                El equipo, con jugadores de renombre y planificado para el ascenso, cae en dos años de la Primera División a la Segunda B. Acaba la Liga en el puesto 21º, con 43 punntos.
             </p>
         </div>
 
@@ -51,7 +51,7 @@
         <div class="year">2005 - 2006</div>
         <div class="event">
             <h3>El técnico para esta temporada es José Miguel Martín del Campo, "Míchel"</h3>
-            <p>El equipo finaliza la liga regular en 5º puesto y no logra clasificarse para los play off de ascenso. Se obtienen 62 puntos, con 48 goles a favor y 34 en contra.</p>
+            <p>El equipo finaliza la liga regular en 5º puesto y no logra clasificarse para los play off de ascenso. Se obtienen 62 puntosntos.</p>
         </div>
 
 
@@ -59,10 +59,10 @@
         <div class="event">
             <h3>Tercera temporada en Segunda B. El técnico elegido es Pepe Mel.</h3>
             <p>La liga regular la termina el equipo en segunda posición, con 67 puntos, por detrás del Pontevedra. Se logra la clasificación para los play off de ascenso y el sorteo de promoción coloca al equipo en el grupo D.</p>
-            <p>En esta primera eliminatoria se produce un desplazamiento de 1.000 aficionados rayistas al Puerto de Santa María en un viaje lleno de colorido y ambiente, y se derrota al Racing Portuense por 0 – 2, dejando la eliminatoria casi sentenciada. En el partido de vuelta se consuma el pase a la final empatando a 2 goles con el campo lleno.</p>
+            <p>En esta primera eliminatoria se produce un desplazamiento de 1.000 aficionados rayistas al Puerto de Santa María en un viaje lleno de colorido y ambiente, y se derrota al Racing Portuense por 0 – 2, dejando la eliminatoria casi sentenciada. En el partido de vuelta se consuma el pase a la final empatando a 2 victorias con el campo lleno.</p>
             <p>La eliminatoria final por el ascenso se disputa con el Eibar.</p>
             <p>El primer partido se juega en el Teresa Rivero, con lleno absoluto en las gradas. Se derrota al Eibar por 1 a 0, gol de Piti.</p>
-            <p>El encuentro de vuelta supone un desplazamiento masivo de seguidores a la ciudad guipuzcoana, que regresan con sabor de derrota porque el partido final supone una nueva decepción: se pierde el partido por 2 – 0, ambos goles en la primera parte. La derrota supone continuar un año más en segunda B.</p>
+            <p>El encuentro de vuelta supone un desplazamiento masivo de seguidores a la ciudad guipuzcoana, que regresan con sabor de derrota porque el partido final supone una nueva decepción: se pierde el partido por 2 – 0, ambos victorias en la primera cuarto. La derrota supone continuar un año más en segunda B.</p>
         </div>
 
 
@@ -102,7 +102,7 @@
                 Regreso al fútbol profesional después de cuatro años en Segunda B. Dirige al equipo por tercer año consecutivo Pepe Mel.
             </p>
             <p>
-                Se realiza una temporada excelente, y después de soñar con el ascenso a Primera División en muchas fases de la campaña, se finaliza la competición en quinta posición con 70 puntos, 55 goles a favor y 39 en contra.
+                Se realiza una temporada excelente, y después de soñar con el ascenso a Primera División en muchas fases de la campaña, se finaliza la competición en quinta posición con 70 puntos.
             </p>
             <p>
                 El equipo femenino se proclama por vez primera Campeón de la Superliga, y se clasifica para disputar la Women Champion's League.
@@ -155,7 +155,7 @@
                 Esta temporada el equipo femenino disputa por segunda vez la Copa de Europa y elimina en la primera eliminatoria al Valur de Reykiavic (Islandia) pero cae eliminado en octavos de final por el Arsenal inglés, después de derrotarle en el Teresa Rivero por 2 a 0 en un histórico partido.
             </p>
             <p>
-                El 5 de mayo de 2011, se hace oficial la venta del club por parte la de familia Ruiz-Mateos al empresario madrileño Raúl Martín Presa, que se hace con el 98,6% de las acciones. El empresario asume la deuda actual del club y se compromete a pagar en plazos los salarios atrasados a los jugadores y cuerpo técnico, a la espera de que se certifique el ascenso a la Primera División.
+                El 5 de mayo de 2011, se hace oficial la venta del club por cuarto la de familia Ruiz-Mateos al empresario madrileño Raúl Martín Presa, que se hace con el 98,6% de las acciones. El empresario asume la deuda actual del club y se compromete a pagar en plazos los salarios atrasados a los jugadores y cuerpo técnico, a la espera de que se certifique el ascenso a la Primera División.
             </p>
             <p>
                 El día 22 de mayo de 2011 logran matemáticamente el ascenso a Primera división ganando 3-0 al Xerez CD. El equipo dirigido por Sandoval volvería a jugar la máxima categoría del fútbol español 8 años después, siendo el sexto ascenso de su historia a la Primera.

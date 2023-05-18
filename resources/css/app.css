@@ -9,6 +9,9 @@ body{
     max-width: 100%;
 }
 
+a{
+    text-decoration: none;
+}
 /*NAVBAR*/
 
 
@@ -136,6 +139,7 @@ body{
 
 /*CAROUSEL RESULTADOS*/
 .carrusel-resultados {
+    font-size: 12px;
     width: 100%;
     height: 2.5rem;
     display: flex;
@@ -253,28 +257,28 @@ body{
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
-    background-color: #ffffff; 
+    background-color: #ffffff;
     text-align: left;
   }
-  
+
   .noticiasVarias img {
     width: 600px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
-  
+
   .noticiasVarias h2 {
     font-size: 24px;
     margin-bottom: 20px;
     font-weight: bold;
     color: #000000;
   }
-  
+
   .noticiasVarias p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 10px;
   }
-  
+
   .noticiasVarias strong {
     font-weight: bold;
   }
@@ -288,9 +292,11 @@ body{
     background-size: 100% 100%;
     border: 0;
 }
-/* Estilos para el fondo */
+/* para el fondo */
 .background {
     background-image: url('../assets/img/noticia3.webp'); /* Coloca aquí la ruta a tu imagen de fondo */
+}
+.background, .background2, .background3, .background4{
     background-size: cover;
     position: relative;
     height: 90vh;
@@ -299,7 +305,19 @@ body{
     background-position: center;
 }
 
-/* Estilos para el div encima del fondo */
+.background2{
+    background-image: url('../assets/img/noticia4.webp')
+}
+
+.background3{
+    background-image: url('../assets/img/noticia5.png')
+}
+
+.background4{
+    background-image: url('../assets/img/noticia6.png')
+}
+
+/* para el div encima del fondo */
 .foreground {
     position: absolute;
     bottom: 0;
@@ -314,7 +332,7 @@ body{
     padding: 0 20px;
 }
 
-/* Estilos para el botón */
+/* para el botón */
 .button {
     background-color: red;
     color: white;
@@ -325,7 +343,7 @@ body{
     cursor: pointer;
 }
 
-/* Estilos para pantallas pequeñas */
+/* para pantallas pequeñas */
 @media screen and (max-width: 768px) {
     .background {
         height: auto;
@@ -341,7 +359,7 @@ body{
     }
 }
 
-/* Estilos para el div negro */
+/* para el div negro */
 
 .black-div {
     background-color: black;
@@ -401,7 +419,7 @@ body{
     }
 }
 
-/* Estilos para los divs hijos */
+/* para los divs hijos */
 
 .child-div {
     flex: 1;
@@ -518,6 +536,11 @@ body{
     width: 100%;
 }
 
+tr{
+    border-bottom: 1px solid #e21921;
+}
+
+
 .tabla h2 {
     text-align: center;
     font-size: 1.5rem;
@@ -581,14 +604,16 @@ body{
 
 .cuadrado-rojo, .cuadrado-negro {
     display: flex;
+    width: 50px;
     justify-content: center;
     align-items: center;
-    padding: 60px 20px;
+    padding: 20px 0px;
     height: 100%;
     border-radius: 1%;
     font-size: 20px;
     font-weight: bold;
     color: #fff;
+    text-align: center;
 }
 
 .cuadrado-rojo {
@@ -602,32 +627,28 @@ body{
 .info-evento {
     display: flex;
     flex-direction: column;
+    font-size: 10px;
     margin-left: 20px;
 }
 
 .hora {
-    font-size: 20px;
     font-weight: bold;
 }
 
 .lugar {
     margin-top: 5px;
-    font-size: 16px;
 }
 
 .tipo {
     margin-top: 5px;
-    font-size: 16px;
 }
 
 .jornada {
     margin-top: 5px;
-    font-size: 16px;
 }
 
 .equipos {
     margin-top: 5px;
-    font-size: 18px;
     font-weight: bold;
 }
 
@@ -871,6 +892,8 @@ body{
     color: #666;
 }
 
+
+
 .container {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -878,23 +901,200 @@ body{
     background-color: #f7f7f7;
     border-radius: 4px;
   }
-  
+
   .year {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
   }
-  
+
   .event {
     margin-bottom: 20px;
   }
-  
+
   .event h3 {
     font-size: 18px;
     font-weight: bold;
   }
-  
+
   .event p {
     font-size: 14px;
     margin-top: 5px;
   }
+.jugador {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.nombre {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.dorsal {
+    color: gray;
+}
+
+.plantilla {
+    text-align: center;
+    color: black;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.posiciones {
+    color: #e21921;
+    font-size: 25px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #dedede;
+}
+
+
+
+.jugadores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.jugador {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.nombre {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.dorsal {
+    color: gray;
+}
+
+.foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1px solid #191919;
+}
+
+.foto img{
+    background-size: cover;
+    position: absolute;
+    height: 100px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.j1{
+    background-image: url("../assets/img/j1.png");
+}
+
+.j2{
+    background-image: url("../assets/img/j2.png");
+}
+
+.j3{
+    background-image: url("../assets/img/j3.png");
+}
+
+.j4{
+    background-image: url("../assets/img/j4.png");
+}
+
+.j5{
+    background-image: url("../assets/img/j5.png");
+}
+
+.j6{
+    background-image: url("../assets/img/j6.png");
+}
+
+.j7{
+    background-image: url("../assets/img/j7.png");
+}
+
+.j8{
+    background-image: url("../assets/img/j8.png");
+}
+
+.j9{
+    background-image: url("../assets/img/j9.png");
+}
+
+.j10{
+    background-image: url("../assets/img/j10.png");
+}
+
+.j11{
+    background-image: url("../assets/img/j11.png");
+}
+
+.j12{
+    background-image: url("../assets/img/j12.png");
+}
+
+.pabellon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.pabellon-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.pab {
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+.pabellon-info p {
+    line-height: 1.5;
+}
+
+.pabellon-image {
+    flex: 1;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    background-image: url("../assets/img/pab.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120%;
+    padding: 50px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 900px){
+    .pabellon{
+        flex-direction: column;
+        height: auto;
+    }
+    .pabellon-image{
+        padding: 120px;
+        margin: 10px 0px;
+    }
+}
+
+.fotopab {
+    max-width: 100px;
+    max-height: 100px;
+    height: auto;
+}

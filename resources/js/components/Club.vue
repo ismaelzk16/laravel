@@ -234,7 +234,7 @@
                   Novena temporada del equipo en Primera División. Sigue como entrenador Juande Ramos.<br>
                   El equipo hace historia al alcanzar por vez primera el liderato de la Primera División, tras ganar los cuatro primeros partidos al Atlético de Madrid, Mallorca, Real Sociedad y Celta. El liderato se repetiría en las jornadas 8ª, 10ª y 11ª.<br>
                   El Club con el penúltimo presupuesto de Primera División causa sensación en Europa, siendo noticia en diarios y revistas de todo el continente.<br>
-                  La Liga se finaliza en 9ª posición con 52 puntos, 51 goles a favor y 53 en contra. Se gana el Trofeo al Juego Limpio y se participa en el sorteo de tres plazas para la Copa de la UEFA. Una de las plazas se asigna al Rayo Vallecano, que de esta forma jugará la próxima temporada en Europa.<br>
+                  La Liga se finaliza en 9ª posición con 52 puntos. Se gana el Trofeo al Juego Limpio y se participa en el sorteo de tres plazas para la Copa de la UEFA. Una de las plazas se asigna al Rayo Vallecano, que de esta forma jugará la próxima temporada en Europa.<br>
                   A finales de agosto de 1999, los abonados del Club aprueban en referéndum añadir el nombre de la Presidenta al del estadio, que pasa a denominarse "Campo de Fútbol de Vallecas, Teresa Rivero".
                 </p>
               </div>

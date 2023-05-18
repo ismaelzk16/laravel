@@ -12,27 +12,27 @@
             <thead class="bg-dark text-light">
               <tr>
                 <th>#</th>
-                <th>Goles Locales</th>
-                <th>Goles Visitantes</th>
                 <th>Jornada</th>
-                <th>Situacion</th>
-                <th>Fecha</th>
-                <th>Equipo Local</th>
-                <th>Equipo Visitante</th>
-                <th>Ubicacion</th>
-                <th>Opciones</th>
+                  <th>Situacion</th>
+                  <th>Fecha</th>
+                  <th>Equipo Local</th>
+                  <th>Puntos Locales</th>
+                  <th>Puntos Visitantes</th>
+                  <th>Equipo Visitante</th>
+                  <th>Ubicacion</th>
+                  <th>Opciones</th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="(partido, index) in partidos" :key="index">
                 <td class="text-center">{{index}}</td>
-                <td>{{partido.golesLocales}}</td>
-                <td>{{partido.golesVisitantes}}</td>
                 <td>{{partido.jornada}}</td>
-                <td>{{partido.situacion}}</td>
-                <td>{{partido.fecha}}</td>
-                <td>{{partido.equipoLocal}}</td>
-                <td>{{partido.equipoVisitante}}</td>
+                  <td>{{partido.situacion}}</td>
+                  <td>{{partido.fecha}}</td>
+                  <td>{{partido.equipoLocal}}</td>
+                  <td>{{partido.golesVisitantes}}</td>
+                  <td>{{partido.golesLocales}}</td>
+                  <td>{{partido.equipoVisitante}}</td>
                 <td>{{partido.ubicacion}}</td>
                 <td class="text-center">
                   <div class="d-flex flex-column justify-content-center align-items-center">
@@ -47,7 +47,7 @@
       </div>
     </div>
   </template>
-  
+
   <script>
   export default {
     data() {
@@ -94,4 +94,3 @@
     }
   };
   </script>
-  
