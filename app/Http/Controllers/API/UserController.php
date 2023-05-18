@@ -51,7 +51,7 @@ class UserController extends Controller
         $user->password = Hash::make($request->password);
         $user->phone = $request->phone;
         $user->save();
-        $user->roles()->sync(2);
+        $user->roles()->sync(3);
     }catch(\Illuminate\Database\QueryException $ex){
         $success = false;
         $message = $ex->getMessage();
